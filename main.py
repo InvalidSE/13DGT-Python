@@ -118,6 +118,20 @@ def get_questions(topic, difficulty, amount):
     questions = []
     for question in data["results"]:
         questions.append(Question(question["question"], question["correct_answer"], question["incorrect_answers"]))
+    
+    # remove things such as &quot; and &amp; from the questions and answers
+    for question in questions:
+        question.question = question.question.replace("&quot;", "\"")        # THIS COULD PROBABLY BE DONE BETTER
+        question.question = question.question.replace("&amp;", "&")
+        question.question = question.question.replace("&#039;", "'")
+        question.correct_answer = question.correct_answer.replace("&quot;", "\"")
+        question.correct_answer = question.correct_answer.replace("&amp;", "&")
+        question.correct_answer = question.correct_answer.replace("&#039;", "'")
+        for i in range(len(question.incorrect_answers)):
+            question.incorrect_answers[i] = question.incorrect_answers[i].replace("&quot;", "\"")
+            question.incorrect_answers[i] = question.incorrect_answers[i].replace("&amp;", "&") 
+            question.incorrect_answers[i] = question.incorrect_answers[i].replace("&#039;", "'")
+
     return questions
 
 
@@ -138,15 +152,35 @@ def verify_input(input_num, min, max):
 def box_print(text):
     terminal_size = os.get_terminal_size()
     output = "╔" + "═"*(terminal_size.columns-2) + "╗\n"
-    text = text.split(" ")
-    line = ""
-    for word in text:
-        if len(line + word) < terminal_size.columns - 4:
-            line += word + " "
-        else:
-            output += f"║ {line:<{terminal_size.columns-4}} ║\n"
-            line = word + " "
-    output += f"║ {line:<{terminal_size.columns-4}} ║\n"
+    
+    if("\n" in text):
+        lines = text.split("\n")
+    #     text = text.split("\n")
+    #     for line in text:
+    #         if(len(line) > terminal_size.columns - 4):
+    #             line.split(" ")
+    #             for word in line:
+    #                 if len(line + word) < terminal_size.columns - 4:
+    #                     line += word + " "
+    #                 else:
+    #                     output += f"║ {line:<{terminal_size.columns-4}} ║\n"
+    #                     line = word + " "
+    #             output += f"║ {line:<{terminal_size.columns-4}} ║\n"
+    #         else:
+    #             output += f"║ {line:<{terminal_size.columns-4}} ║\n"
+    #     output += "╚" + "═"*(terminal_size.columns-2) + "╝"
+    #     print(output)
+    #     return
+
+    # text = text.split(" ")
+    # line = ""
+    # for word in text:
+    #     if len(line + word) < terminal_size.columns - 4:
+    #         line += word + " "
+    #     else:
+    #         output += f"║ {line:<{terminal_size.columns-4}} ║\n"
+    #         line = word + " "
+    # output += f"║ {line:<{terminal_size.columns-4}} ║\n"
     output += "╚" + "═"*(terminal_size.columns-2) + "╝"
     print(output)
 
@@ -177,12 +211,38 @@ def get_options():
     # get the players' names
     names = []
     for i in range(players):
+        name = input(f"What is the name of player {i+1}? ")
         while name == "":
             name = input(f"What is the name of player {i+1}? ")
         names.append(name)
-        
-
+    
     return topic, difficulty, amount, players, names
+
+
+def quiz(questions, player_number, names):
+    os.system("cls")
+    print(f"Player {player_number+1}/{len(names)}, {names[player_number]}")
+    input(f"Press enter to start the game...")
+
+    # start the quiz
+    for i, question in enumerate(questions):
+        os.system("cls")
+        box_print(f"Question {i+1}/{len(questions)}\n{question.question}")
+        
+        answers = ""
+        for j, answer in enumerate(question.all_answers):
+            answers += f"{j+1}. {answer}\n"
+            
+            # if the answer is the last one, remove the last \n
+            if j == len(question.all_answers)-1:
+                answers = answers[:-1]
+
+        box_print(answers)
+
+        answer = verify_input(input("Enter the number of your answer: "), 1, len(question.all_answers))
+
+
+    
 
 
 # Welcome message
@@ -212,7 +272,13 @@ def main():
     # start the game
     print(f"Starting the game with {players} players...")
     time.sleep(1)
-    os.system("cls")
+
+    # start the quiz
+    for i, player in enumerate(names):
+        quiz(questions, i, names)
+
+    
+    
     
 
 
