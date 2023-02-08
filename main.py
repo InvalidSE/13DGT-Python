@@ -73,6 +73,7 @@ import random
 import time
 import os
 import sys
+from html import unescape
 
 # =================== CLASSES ===================
 
@@ -92,6 +93,24 @@ class Question:
     def check_answer(self, answer):
         return answer == self.correct_answer
 
+class User:
+    def __init__(self, name):
+        self.name = name    # Name of the user
+        self.score = 0      # Score for the score board
+        self.answers = []   # Will store the answers the user gave
+
+    def __str__(self):
+        return self.name
+
+    def add_score(self, score):
+        self.score += score
+
+    def add_answer(self, answer):
+        self.answers.append(answer)
+
+    def get_score(self):
+        return self.score
+
 
 # This class is used to print colored text
 # I got it from https://stackoverflow.com/questions/287871/how-to-print-colored-text-in-python
@@ -105,6 +124,7 @@ class bcolors:
     ENDC = '\033[0m'
     BOLD = '\033[1m'
     UNDERLINE = '\033[4m'
+    
 
 
 # =================== FUNCTIONS ===================
@@ -113,6 +133,8 @@ class bcolors:
 # This function gets the questions from the API
 def get_questions(topic, difficulty, amount):
     url = f"https://opentdb.com/api.php?amount={amount}&category={topic}&difficulty={difficulty}&type=multiple"
+    print(url)
+    time.sleep(2)
     response = requests.get(url)
     data = json.loads(response.text)
     questions = []
@@ -121,16 +143,10 @@ def get_questions(topic, difficulty, amount):
     
     # remove things such as &quot; and &amp; from the questions and answers
     for question in questions:
-        question.question = question.question.replace("&quot;", "\"")        # THIS COULD PROBABLY BE DONE BETTER
-        question.question = question.question.replace("&amp;", "&")
-        question.question = question.question.replace("&#039;", "'")
-        question.correct_answer = question.correct_answer.replace("&quot;", "\"")
-        question.correct_answer = question.correct_answer.replace("&amp;", "&")
-        question.correct_answer = question.correct_answer.replace("&#039;", "'")
+        question.question = unescape(question.question)
+        question.correct_answer = unescape(question.correct_answer)
         for i in range(len(question.incorrect_answers)):
-            question.incorrect_answers[i] = question.incorrect_answers[i].replace("&quot;", "\"")
-            question.incorrect_answers[i] = question.incorrect_answers[i].replace("&amp;", "&") 
-            question.incorrect_answers[i] = question.incorrect_answers[i].replace("&#039;", "'")
+            question.incorrect_answers[i] = unescape(question.incorrect_answers[i])
 
     return questions
 
@@ -155,32 +171,19 @@ def box_print(text):
     
     if("\n" in text):
         lines = text.split("\n")
-    #     text = text.split("\n")
-    #     for line in text:
-    #         if(len(line) > terminal_size.columns - 4):
-    #             line.split(" ")
-    #             for word in line:
-    #                 if len(line + word) < terminal_size.columns - 4:
-    #                     line += word + " "
-    #                 else:
-    #                     output += f"║ {line:<{terminal_size.columns-4}} ║\n"
-    #                     line = word + " "
-    #             output += f"║ {line:<{terminal_size.columns-4}} ║\n"
-    #         else:
-    #             output += f"║ {line:<{terminal_size.columns-4}} ║\n"
-    #     output += "╚" + "═"*(terminal_size.columns-2) + "╝"
-    #     print(output)
-    #     return
+    else:
+        lines = [text]
 
-    # text = text.split(" ")
-    # line = ""
-    # for word in text:
-    #     if len(line + word) < terminal_size.columns - 4:
-    #         line += word + " "
-    #     else:
-    #         output += f"║ {line:<{terminal_size.columns-4}} ║\n"
-    #         line = word + " "
-    # output += f"║ {line:<{terminal_size.columns-4}} ║\n"
+    for line in lines:
+        words = line.split(" ")
+        current_line = ""
+        for word in words:
+            if len(current_line + word) > terminal_size.columns-4:
+                output += "║ " + current_line + " "*(terminal_size.columns-4-len(current_line)) + " ║\n"
+                current_line = ""
+            current_line += word + " "
+        output += "║ " + current_line + " "*(terminal_size.columns-4-len(current_line)) + " ║\n"
+        
     output += "╚" + "═"*(terminal_size.columns-2) + "╝"
     print(output)
 
@@ -208,20 +211,23 @@ def get_options():
     # get the amount of players
     players = verify_input(input("\nHow many players are there? "), 1, 10)
 
+    #users is a list of User objects
+    users = []
+
     # get the players' names
-    names = []
     for i in range(players):
-        name = input(f"What is the name of player {i+1}? ")
+        name = input(f"\nWhat is the name of player {i+1}? ")
         while name == "":
             name = input(f"What is the name of player {i+1}? ")
-        names.append(name)
+        users.append(User(name))
+            
     
-    return topic, difficulty, amount, players, names
+    return topic, difficulty, amount, users
 
 
-def quiz(questions, player_number, names):
+def quiz(questions, player_number, users):
     os.system("cls")
-    print(f"Player {player_number+1}/{len(names)}, {names[player_number]}")
+    print(f"Player {player_number+1}/{len(users)}, {users[player_number].name}")
     input(f"Press enter to start the game...")
 
     # start the quiz
@@ -240,6 +246,17 @@ def quiz(questions, player_number, names):
         box_print(answers)
 
         answer = verify_input(input("Enter the number of your answer: "), 1, len(question.all_answers))
+
+        if question.all_answers[answer-1] == question.correct_answer:
+            users[player_number].add_score(1)
+            print(bcolors.OKGREEN + "\nCorrect!" + bcolors.ENDC)
+        else:
+            print(bcolors.FAIL + "\nIncorrect!" + f"\nThe correct answer was {question.correct_answer}." + bcolors.ENDC)
+
+        users[player_number].add_answer({"question": question.question, "correct_answer": question.correct_answer, "user_answer": question.all_answers[answer-1], "correct": question.all_answers[answer-1] == question.correct_answer})
+        input("\nPress enter to continue...")
+
+
 
 
     
@@ -264,18 +281,18 @@ def main():
     welcome()
 
     # get the options
-    topic, difficulty, amount, players, names = get_options()
+    topic, difficulty, amount, users = get_options()
 
     # get the questions and put them in a list of Question objects
     questions = get_questions(topics[topic], difficulties[difficulty-1], amount)
 
     # start the game
-    print(f"Starting the game with {players} players...")
+    print(f"Starting the game with {len(users)} players...")
     time.sleep(1)
 
     # start the quiz
-    for i, player in enumerate(names):
-        quiz(questions, i, names)
+    for i, user in enumerate(users):
+        quiz(questions=questions, player_number=i, users=users)
 
     
     
