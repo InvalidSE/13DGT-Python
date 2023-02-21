@@ -27,12 +27,18 @@
 
 # use ╗ ╝ ╚ ╔ ═ ║ to draw boxes around the questions and text
 
+
+
 # =================== VARIABLES ===================
-welcome_text = """ _ _____ ____   ____ _____ ___        _     
+
+welcome_text = """
+ _ _____ ____   ____ _____ ___        _     
 / |___ /|  _ \ / ___|_   _/ _ \ _   _(_)____
 | | |_ \| | | | |  _  | || | | | | | | |_  /
 | |___) | |_| | |_| | | || |_| | |_| | |/ / 
-|_|____/|____/ \____| |_| \__\_\\__,_|_/___|"""
+|_|____/|____/ \____| |_| \__\_\\\__,_|_/___|
+"""
+
 topics = {
     "General Knowledge": 9,
     "Books": 10,
@@ -64,6 +70,17 @@ default_topic = "General Knowledge"
 default_difficulty = "easy" 
 default_amount = 10
 
+html_entities = {
+    "&quot;": '"',
+    "&amp;": "&",
+    "&apos;": "'",
+    "&lt;": "<", 
+    "&gt;": ">",
+    "&nbsp;": " ",
+    "&rsquo;": "'",
+    "&#039;": "'",
+    "&oacute;": "ó",
+}
 
 
 # =================== IMPORTS ===================
@@ -133,22 +150,27 @@ class bcolors:
 # This function gets the questions from the API
 def get_questions(topic, difficulty, amount):
     url = f"https://opentdb.com/api.php?amount={amount}&category={topic}&difficulty={difficulty}&type=multiple"
-    print(url)
-    time.sleep(2)
+    # print(url)
     response = requests.get(url)
     data = json.loads(response.text)
     questions = []
     for question in data["results"]:
         questions.append(Question(question["question"], question["correct_answer"], question["incorrect_answers"]))
-    
-    # remove things such as &quot; and &amp; from the questions and answers
+
+    # replace html entities with the actual characters
     for question in questions:
-        question.question = unescape(question.question)
-        question.correct_answer = unescape(question.correct_answer)
+        question.question = replace_html_entities(question.question)
+        question.correct_answer = replace_html_entities(question.correct_answer)
         for i in range(len(question.incorrect_answers)):
-            question.incorrect_answers[i] = unescape(question.incorrect_answers[i])
+            question.incorrect_answers[i] = replace_html_entities(question.incorrect_answers[i])
 
     return questions
+
+def replace_html_entities(text):
+    text = unescape(text) # This does most of the work
+    for entity in html_entities: # This is for the ones that unescape doesn't do, like &rsquo; 
+        text = text.replace(entity, html_entities[entity])
+    return text
 
 
 # This function verifies that the input is a number between the min and max
@@ -181,7 +203,10 @@ def box_print(text):
             if len(current_line + word) > terminal_size.columns-4:
                 output += "║ " + current_line + " "*(terminal_size.columns-4-len(current_line)) + " ║\n"
                 current_line = ""
-            current_line += word + " "
+            current_line += word 
+            if(current_line != ""):
+                if(len(current_line) < terminal_size.columns-4):
+                    current_line += " "
         output += "║ " + current_line + " "*(terminal_size.columns-4-len(current_line)) + " ║\n"
         
     output += "╚" + "═"*(terminal_size.columns-2) + "╝"
@@ -236,7 +261,7 @@ def quiz(questions, player_number, users):
         box_print(f"Question {i+1}/{len(questions)}\n{question.question}")
         
         answers = ""
-        for j, answer in enumerate(question.all_answers):
+        for j, answer in enumerate(question.incorrect_answers.append(question.correct_answer)):
             answers += f"{j+1}. {answer}\n"
             
             # if the answer is the last one, remove the last \n
@@ -276,7 +301,7 @@ def welcome():
 
 # This is the main function
 def main():
-    
+
     # welcome the user
     welcome()
 
@@ -309,4 +334,3 @@ if __name__ == "__main__":
     main()
     input("Press enter to exit...")
     sys.exit()
-
