@@ -84,13 +84,20 @@ html_entities = {
 
 
 # =================== IMPORTS ===================
-import requests
+import os
 import json
 import random
 import time
-import os
 import sys
 from html import unescape
+import base64
+
+try:
+    import requests
+except ModuleNotFoundError:
+    input("The requests module is not installed. Press enter to install it, else press ctrl+c to exit.")
+    os.system("python -m pip install requests")
+    import requests
 
 # =================== CLASSES ===================
 
@@ -149,7 +156,7 @@ class bcolors:
 
 # This function gets the questions from the API
 def get_questions(topic, difficulty, amount):
-    url = f"https://opentdb.com/api.php?amount={amount}&category={topic}&difficulty={difficulty}&type=multiple"
+    url = f"https://opentdb.com/api.php?amount={amount}&category={topic}&difficulty={difficulty}&type=multiple&encode=base64"
     # print(url)
     response = requests.get(url)
     data = json.loads(response.text)
@@ -159,17 +166,16 @@ def get_questions(topic, difficulty, amount):
 
     # replace html entities with the actual characters
     for question in questions:
-        question.question = replace_html_entities(question.question)
-        question.correct_answer = replace_html_entities(question.correct_answer)
+        question.question = decode_response(question.question)
+        question.correct_answer = decode_response(question.correct_answer)
         for i in range(len(question.incorrect_answers)):
-            question.incorrect_answers[i] = replace_html_entities(question.incorrect_answers[i])
+            question.incorrect_answers[i] = decode_response(question.incorrect_answers[i])
 
     return questions
 
-def replace_html_entities(text):
-    text = unescape(text) # This does most of the work
-    for entity in html_entities: # This is for the ones that unescape doesn't do, like &rsquo; 
-        text = text.replace(entity, html_entities[entity])
+def decode_response(text):
+    # decode the base64 encoded text
+    text = base64.b64decode(text).decode("utf-8")
     return text
 
 
@@ -260,30 +266,45 @@ def quiz(questions, player_number, users):
         os.system("cls")
         box_print(f"Question {i+1}/{len(questions)}\n{question.question}")
         
-        answers = ""
-        for j, answer in enumerate(question.incorrect_answers.append(question.correct_answer)):
-            answers += f"{j+1}. {answer}\n"
-            
-            # if the answer is the last one, remove the last \n
-            if j == len(question.all_answers)-1:
-                answers = answers[:-1]
+        correct_answer_position = random.randint(0, len(question.all_answers)-1)
+        
+        answers = question.incorrect_answers.copy()
+        answers.insert(correct_answer_position, question.correct_answer)
 
-        box_print(answers)
+        answers_to_print = []
+        for i, answer in enumerate(answers):
+            answers_to_print.append(f"{i+1}. {answer}")
+            if i == 3: 
+                break
+            else:
+                answers_to_print.append("\n")
+
+        box_print("".join(answers_to_print))
 
         answer = verify_input(input("Enter the number of your answer: "), 1, len(question.all_answers))
 
-        if question.all_answers[answer-1] == question.correct_answer:
+        if correct_answer_position+1 == answer:
             users[player_number].add_score(1)
             print(bcolors.OKGREEN + "\nCorrect!" + bcolors.ENDC)
         else:
             print(bcolors.FAIL + "\nIncorrect!" + f"\nThe correct answer was {question.correct_answer}." + bcolors.ENDC)
 
-        users[player_number].add_answer({"question": question.question, "correct_answer": question.correct_answer, "user_answer": question.all_answers[answer-1], "correct": question.all_answers[answer-1] == question.correct_answer})
+        users[player_number].add_answer({"question": question.question, "correct_answer": answers_to_print[correct_answer_position], "user_answer": answers_to_print[answer-1], "correct": correct_answer_position+1 == answer})
         input("\nPress enter to continue...")
 
 
 
 
+# This function prints the final results
+def final_results(users, questions):
+    os.system("cls")
+    print("Final results:")
+    # sort the users by score
+    users.sort(key=lambda x: x.score, reverse=True)
+    for i, user in enumerate(users):
+        print(f"{i+1}. {user.name}: {user.score}/{len(questions)}.")
+
+    input("\nPress enter to continue...")
     
 
 
@@ -318,6 +339,9 @@ def main():
     # start the quiz
     for i, user in enumerate(users):
         quiz(questions=questions, player_number=i, users=users)
+
+    # print the final results
+    final_results(users, questions)
 
     
     
