@@ -301,8 +301,25 @@ def final_results(users, questions):
     print("Final results:")
     # sort the users by score
     users.sort(key=lambda x: x.score, reverse=True)
+
     for i, user in enumerate(users):
-        print(f"{i+1}. {user.name}: {user.score}/{len(questions)}.")
+        answer_string = "["
+        for j, question in enumerate(user.answers):
+            if question["correct"]:
+                answer_string += bcolors.OKGREEN + "•" + bcolors.ENDC
+            else:
+                answer_string += bcolors.FAIL + "•" + bcolors.ENDC
+            if j == len(user.answers)-1:
+                answer_string += "]"
+
+        leaderboard_string = (f"{i+1}. {user.name}: {user.score}/{len(questions)} " + bcolors.ENDC)
+        if(len(leaderboard_string) + len(questions) + 3 <= os.get_terminal_size().columns):
+            leaderboard_string += answer_string
+
+        print(leaderboard_string)
+
+
+        
 
     input("\nPress enter to continue...")
     
