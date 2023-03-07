@@ -26,6 +26,7 @@
 # Strings, Numbers and Boolean data types
 
 # use ╗ ╝ ╚ ╔ ═ ║ to draw boxes around the questions and text
+# as I have to read / write to a file because of the assignment, I will store results in a json file
 
 
 
@@ -66,22 +67,6 @@ topics = {
     "Cartoon & Animations": 32
 }
 difficulties = ["easy", "medium", "hard"]
-default_topic = "General Knowledge"
-default_difficulty = "easy" 
-default_amount = 10
-
-html_entities = {
-    "&quot;": '"',
-    "&amp;": "&",
-    "&apos;": "'",
-    "&lt;": "<", 
-    "&gt;": ">",
-    "&nbsp;": " ",
-    "&rsquo;": "'",
-    "&#039;": "'",
-    "&oacute;": "ó",
-}
-
 
 # =================== IMPORTS ===================
 import os
@@ -89,7 +74,6 @@ import json
 import random
 import time
 import sys
-from html import unescape
 import base64
 
 try:
@@ -117,6 +101,8 @@ class Question:
     def check_answer(self, answer):
         return answer == self.correct_answer
 
+
+# This class is used to store the users
 class User:
     def __init__(self, name):
         self.name = name    # Name of the user
@@ -166,17 +152,13 @@ def get_questions(topic, difficulty, amount):
 
     # replace html entities with the actual characters
     for question in questions:
-        question.question = decode_response(question.question)
-        question.correct_answer = decode_response(question.correct_answer)
+        question.question = base64.b64decode(question.question).decode("utf-8")
+        question.correct_answer = base64.b64decode(question.correct_answer).decode("utf-8")
         for i in range(len(question.incorrect_answers)):
-            question.incorrect_answers[i] = decode_response(question.incorrect_answers[i])
+            question.incorrect_answers[i] = base64.b64decode(question.incorrect_answers[i]).decode("utf-8")
 
     return questions
 
-def decode_response(text):
-    # decode the base64 encoded text
-    text = base64.b64decode(text).decode("utf-8")
-    return text
 
 
 # This function verifies that the input is a number between the min and max
@@ -221,7 +203,6 @@ def box_print(text):
 
 # This function gets all the options from the user and returns them 
 def get_options():
-    
 
     # get the topic
     print("\nPlease select a topic:")
@@ -319,8 +300,6 @@ def final_results(users, questions):
         print(leaderboard_string)
 
 
-        
-
     input("\nPress enter to continue...")
     
 
@@ -336,6 +315,24 @@ def welcome():
         print("\nWelcome to the quiz!")
     
 
+# Store previous quiz in a json file
+def store_quiz(questions, users):
+    # create a dictionary with all the questions and answers
+    quiz = {}
+    for i, question in enumerate(questions):
+        quiz[i] = {"question": question.question, "correct_answer": question.correct_answer, "incorrect_answers": question.incorrect_answers}
+
+    # create a dictionary with all the users and their answers
+    users_answers = {}
+    for i, user in enumerate(users):
+        users_answers[i] = {"name": user.name, "answers": user.answers}
+
+    # create a dictionary with the quiz and the users
+    quiz_dict = {"quiz": quiz, "users": users_answers}
+
+    # write the dictionary to a json file
+    with open("quiz.json", "w") as file:
+        json.dump(quiz_dict, file, indent=4)
 
 # This is the main function
 def main():
@@ -360,7 +357,10 @@ def main():
     # print the final results
     final_results(users, questions)
 
+    # store the quiz
+    store_quiz(questions, users)
     
+
     
     
 
