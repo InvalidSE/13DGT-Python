@@ -253,12 +253,14 @@ def quiz(questions, player_number, users):
         answers.insert(correct_answer_position, question.correct_answer)
 
         answers_to_print = []
+        answers_list = []
         for i, answer in enumerate(answers):
             answers_to_print.append(f"{i+1}. {answer}")
+            answers_list.append(answer)
             if i == 3: 
                 break
             else:
-                answers_to_print.append("\n")
+                answers_to_print[-1] += "\n"
 
         box_print("".join(answers_to_print))
 
@@ -270,7 +272,9 @@ def quiz(questions, player_number, users):
         else:
             print(bcolors.FAIL + "\nIncorrect!" + f"\nThe correct answer was {question.correct_answer}." + bcolors.ENDC)
 
-        users[player_number].add_answer({"question": question.question, "correct_answer": answers_to_print[correct_answer_position], "user_answer": answers_to_print[answer-1], "correct": correct_answer_position+1 == answer})
+
+        users[player_number].add_answer({"question": question.question, "correct_answer": question.correct_answer, "user_answer": answers_list[answer-1], "correct": correct_answer_position+1 == answer})
+        print(question.correct_answer, str(answers_list))
         input("\nPress enter to continue...")
 
 
@@ -333,6 +337,7 @@ def store_quiz(questions, users):
     # write the dictionary to a json file
     with open("quiz.json", "w") as file:
         json.dump(quiz_dict, file, indent=4)
+
 
 # This is the main function
 def main():

@@ -1,33 +1,51 @@
 {
     "quiz": {
         "0": {
-            "question": "In past times, what would a gentleman keep in his fob pocket?",
-            "correct_answer": "Watch",
+            "question": "What was the name of the WWF professional wrestling tag team made up of the wrestlers Ax and Smash?",
+            "correct_answer": "Demolition",
             "incorrect_answers": [
-                "Money",
-                "Keys",
-                "Notebook"
+                "The Dream Team",
+                "The Bushwhackers",
+                "The British Bulldogs"
             ]
         },
         "1": {
-            "question": "What is \"dabbing\"?",
-            "correct_answer": "A dance",
+            "question": "Which sign of the zodiac is represented by the Crab?",
+            "correct_answer": "Cancer",
             "incorrect_answers": [
-                "A medical procedure",
-                "A sport",
-                "A language"
+                "Libra",
+                "Virgo",
+                "Sagittarius"
             ]
         },
         "2": {
-            "question": "Which American-owned brewery led the country in sales by volume in 2015?",
-            "correct_answer": "D. G. Yuengling and Son, Inc",
+            "question": "What type of animal was Harambe, who was shot after a child fell into it's enclosure at the Cincinnati Zoo?",
+            "correct_answer": "Gorilla",
             "incorrect_answers": [
-                "Anheuser Busch",
-                "Boston Beer Company",
-                "Miller Coors"
+                "Tiger",
+                "Panda",
+                "Crocodile"
             ]
         },
         "3": {
+            "question": "How many colors are there in a rainbow?",
+            "correct_answer": "7",
+            "incorrect_answers": [
+                "8",
+                "9",
+                "10"
+            ]
+        },
+        "4": {
+            "question": "Red Vines is a brand of what type of candy?",
+            "correct_answer": "Licorice",
+            "incorrect_answers": [
+                "Lollipop",
+                "Chocolate",
+                "Bubblegum"
+            ]
+        },
+        "5": {
             "question": "What machine element is located in the center of fidget spinners?",
             "correct_answer": "Bearings",
             "incorrect_answers": [
@@ -36,189 +54,106 @@
                 "Belts"
             ]
         },
-        "4": {
-            "question": "What is Tasmania?",
-            "correct_answer": "An Australian State",
-            "incorrect_answers": [
-                "A flavor of Ben and Jerry's ice-cream",
-                "A Psychological Disorder",
-                "The Name of a Warner Brothers Cartoon Character"
-            ]
-        },
-        "5": {
-            "question": "What is Cynophobia the fear of?",
-            "correct_answer": "Dogs",
-            "incorrect_answers": [
-                "Birds",
-                "Flying",
-                "Germs"
-            ]
-        },
         "6": {
-            "question": "What are Panama hats made out of?",
-            "correct_answer": "Straw",
+            "question": "According to the nursery rhyme, what fruit did Little Jack Horner pull out of his Christmas pie?",
+            "correct_answer": "Plum",
             "incorrect_answers": [
-                "Silk",
-                "Hemp",
-                "Flax"
+                "Apple",
+                "Peach",
+                "Pear"
             ]
         },
         "7": {
-            "question": "What is the French word for \"fish\"?",
-            "correct_answer": "poisson",
+            "question": "When someone is inexperienced they are said to be what color?",
+            "correct_answer": "Green",
             "incorrect_answers": [
-                "fiche",
-                "escargot",
-                "mer"
+                "Red",
+                "Blue",
+                "Yellow"
             ]
         },
         "8": {
-            "question": "What airline was the owner of the plane that crashed off the coast of Nova Scotia in 1998?",
-            "correct_answer": "Swiss Air",
+            "question": "The Flag of the European Union has how many stars on it?",
+            "correct_answer": "12",
             "incorrect_answers": [
-                "Air France",
-                "British Airways",
-                "TWA"
+                "10",
+                "14",
+                "16"
             ]
         },
         "9": {
-            "question": "What is the official language of Brazil?",
-            "correct_answer": "Portugese",
+            "question": "Which country has the union jack in its flag?",
+            "correct_answer": "New Zealand",
             "incorrect_answers": [
-                "Brazilian",
-                "Spanish",
-                "English"
+                "South Africa",
+                "Canada",
+                "Hong Kong"
             ]
         }
     },
     "users": {
         "0": {
-            "name": "Taine 2",
+            "name": "Taine",
             "answers": [
                 {
-                    "question": "In past times, what would a gentleman keep in his fob pocket?",
-                    "correct_answer": "\n",
-                    "user_answer": "\n",
+                    "question": "What was the name of the WWF professional wrestling tag team made up of the wrestlers Ax and Smash?",
+                    "correct_answer": "Demolition",
+                    "user_answer": "The Bushwhackers",
+                    "correct": false
+                },
+                {
+                    "question": "Which sign of the zodiac is represented by the Crab?",
+                    "correct_answer": "Cancer",
+                    "user_answer": "Libra",
+                    "correct": false
+                },
+                {
+                    "question": "What type of animal was Harambe, who was shot after a child fell into it's enclosure at the Cincinnati Zoo?",
+                    "correct_answer": "Gorilla",
+                    "user_answer": "Gorilla",
                     "correct": true
                 },
                 {
-                    "question": "What is \"dabbing\"?",
-                    "correct_answer": "2. A sport",
-                    "user_answer": "2. A sport",
+                    "question": "How many colors are there in a rainbow?",
+                    "correct_answer": "7",
+                    "user_answer": "7",
                     "correct": true
                 },
                 {
-                    "question": "Which American-owned brewery led the country in sales by volume in 2015?",
-                    "correct_answer": "1. D. G. Yuengling and Son, Inc",
-                    "user_answer": "1. D. G. Yuengling and Son, Inc",
-                    "correct": true
-                },
-                {
-                    "question": "What machine element is located in the center of fidget spinners?",
-                    "correct_answer": "2. Gears",
-                    "user_answer": "2. Gears",
-                    "correct": true
-                },
-                {
-                    "question": "What is Tasmania?",
-                    "correct_answer": "\n",
-                    "user_answer": "\n",
-                    "correct": true
-                },
-                {
-                    "question": "What is Cynophobia the fear of?",
-                    "correct_answer": "\n",
-                    "user_answer": "\n",
-                    "correct": true
-                },
-                {
-                    "question": "What are Panama hats made out of?",
-                    "correct_answer": "2. Hemp",
-                    "user_answer": "2. Hemp",
-                    "correct": true
-                },
-                {
-                    "question": "What is the French word for \"fish\"?",
-                    "correct_answer": "1. poisson",
-                    "user_answer": "1. poisson",
-                    "correct": true
-                },
-                {
-                    "question": "What airline was the owner of the plane that crashed off the coast of Nova Scotia in 1998?",
-                    "correct_answer": "\n",
-                    "user_answer": "\n",
-                    "correct": true
-                },
-                {
-                    "question": "What is the official language of Brazil?",
-                    "correct_answer": "2. Spanish",
-                    "user_answer": "2. Spanish",
-                    "correct": true
-                }
-            ]
-        },
-        "1": {
-            "name": "Taine 1",
-            "answers": [
-                {
-                    "question": "In past times, what would a gentleman keep in his fob pocket?",
-                    "correct_answer": "\n",
-                    "user_answer": "\n",
-                    "correct": true
-                },
-                {
-                    "question": "What is \"dabbing\"?",
-                    "correct_answer": "\n",
-                    "user_answer": "\n",
-                    "correct": true
-                },
-                {
-                    "question": "Which American-owned brewery led the country in sales by volume in 2015?",
-                    "correct_answer": "\n",
-                    "user_answer": "\n",
+                    "question": "Red Vines is a brand of what type of candy?",
+                    "correct_answer": "Licorice",
+                    "user_answer": "Lollipop",
                     "correct": false
                 },
                 {
                     "question": "What machine element is located in the center of fidget spinners?",
-                    "correct_answer": "\n",
-                    "user_answer": "\n",
+                    "correct_answer": "Bearings",
+                    "user_answer": "Axles",
+                    "correct": false
+                },
+                {
+                    "question": "According to the nursery rhyme, what fruit did Little Jack Horner pull out of his Christmas pie?",
+                    "correct_answer": "Plum",
+                    "user_answer": "Plum",
                     "correct": true
                 },
                 {
-                    "question": "What is Tasmania?",
-                    "correct_answer": "1. An Australian State",
-                    "user_answer": "1. An Australian State",
-                    "correct": true
-                },
-                {
-                    "question": "What is Cynophobia the fear of?",
-                    "correct_answer": "2. Flying",
-                    "user_answer": "1. Birds",
+                    "question": "When someone is inexperienced they are said to be what color?",
+                    "correct_answer": "Green",
+                    "user_answer": "Red",
                     "correct": false
                 },
                 {
-                    "question": "What are Panama hats made out of?",
-                    "correct_answer": "\n",
-                    "user_answer": "1. Silk",
+                    "question": "The Flag of the European Union has how many stars on it?",
+                    "correct_answer": "12",
+                    "user_answer": "10",
                     "correct": false
                 },
                 {
-                    "question": "What is the French word for \"fish\"?",
-                    "correct_answer": "2. escargot",
-                    "user_answer": "\n",
+                    "question": "Which country has the union jack in its flag?",
+                    "correct_answer": "New Zealand",
+                    "user_answer": "South Africa",
                     "correct": false
-                },
-                {
-                    "question": "What airline was the owner of the plane that crashed off the coast of Nova Scotia in 1998?",
-                    "correct_answer": "\n",
-                    "user_answer": "\n",
-                    "correct": false
-                },
-                {
-                    "question": "What is the official language of Brazil?",
-                    "correct_answer": "\n",
-                    "user_answer": "\n",
-                    "correct": true
                 }
             ]
         }
