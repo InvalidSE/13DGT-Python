@@ -338,12 +338,48 @@ def store_quiz(questions, users):
     with open("quiz.json", "w") as file:
         json.dump(quiz_dict, file, indent=4)
 
+# View previous quiz
+def view_previous_quiz():
+
+    # open the json file
+    with open("quiz.json", "r") as file:
+        quiz_dict = json.load(file)
+
+    # get the quiz and the users
+    quiz = quiz_dict["quiz"]
+    users = quiz_dict["users"]
+
+    # print the users
+    for i, user in users.items():
+        print(f"\nName: {user['name']}")
+        print("Answers:")
+        for j, answer in enumerate(user["answers"]):
+            print(f"Question {j+1}: {answer['question']}")
+            print(f"Correct answer: {answer['correct_answer']}")
+            print(f"User answer: {answer['user_answer']}")
+            print(f"Correct: {answer['correct']}")
+            input("\nPress enter to continue...\n")
+
 
 # This is the main function
 def main():
 
     # welcome the user
     welcome()
+
+    # ask the user if they want to play a quiz or view previous quizzes
+    print("Do you want to play a quiz or view previous quiz?")
+    print("1. Play a quiz")
+    print("2. View previous quiz")
+
+    # get the user's choice
+    choice = verify_input(input("Enter the number of your choice: "), 1, 2)
+
+    # if the user wants to view previous quizzes
+    if choice == 2:
+        view_previous_quiz()
+        input("Press enter to exit...")
+        sys.exit()
 
     # get the options
     topic, difficulty, amount, users = get_options()

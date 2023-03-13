@@ -1,33 +1,15 @@
 {
     "quiz": {
         "0": {
-            "question": "What was the name of the WWF professional wrestling tag team made up of the wrestlers Ax and Smash?",
-            "correct_answer": "Demolition",
+            "question": "What is \"dabbing\"?",
+            "correct_answer": "A dance",
             "incorrect_answers": [
-                "The Dream Team",
-                "The Bushwhackers",
-                "The British Bulldogs"
+                "A medical procedure",
+                "A sport",
+                "A language"
             ]
         },
         "1": {
-            "question": "Which sign of the zodiac is represented by the Crab?",
-            "correct_answer": "Cancer",
-            "incorrect_answers": [
-                "Libra",
-                "Virgo",
-                "Sagittarius"
-            ]
-        },
-        "2": {
-            "question": "What type of animal was Harambe, who was shot after a child fell into it's enclosure at the Cincinnati Zoo?",
-            "correct_answer": "Gorilla",
-            "incorrect_answers": [
-                "Tiger",
-                "Panda",
-                "Crocodile"
-            ]
-        },
-        "3": {
             "question": "How many colors are there in a rainbow?",
             "correct_answer": "7",
             "incorrect_answers": [
@@ -36,82 +18,153 @@
                 "10"
             ]
         },
-        "4": {
-            "question": "Red Vines is a brand of what type of candy?",
-            "correct_answer": "Licorice",
+        "2": {
+            "question": "What is the French word for \"hat\"?",
+            "correct_answer": "Chapeau",
             "incorrect_answers": [
-                "Lollipop",
-                "Chocolate",
-                "Bubblegum"
+                "Bonnet",
+                " \u00c9charpe",
+                " Casque"
+            ]
+        },
+        "3": {
+            "question": "Which of the following presidents is not on Mount Rushmore?",
+            "correct_answer": "John F. Kennedy",
+            "incorrect_answers": [
+                "Theodore Roosevelt",
+                "Abraham Lincoln",
+                "Thomas Jefferson"
+            ]
+        },
+        "4": {
+            "question": "What is the Zodiac symbol for Gemini?",
+            "correct_answer": "Twins",
+            "incorrect_answers": [
+                "Fish",
+                "Scales",
+                "Maiden"
             ]
         },
         "5": {
-            "question": "What machine element is located in the center of fidget spinners?",
-            "correct_answer": "Bearings",
+            "question": "What are Panama hats made out of?",
+            "correct_answer": "Straw",
             "incorrect_answers": [
-                "Axles",
-                "Gears",
-                "Belts"
+                "Silk",
+                "Hemp",
+                "Flax"
             ]
         },
         "6": {
-            "question": "According to the nursery rhyme, what fruit did Little Jack Horner pull out of his Christmas pie?",
-            "correct_answer": "Plum",
+            "question": "Foie gras is a French delicacy typically made from what part of a duck or goose?",
+            "correct_answer": "Liver",
             "incorrect_answers": [
-                "Apple",
-                "Peach",
-                "Pear"
+                "Heart",
+                "Stomach",
+                "Intestines"
             ]
         },
         "7": {
-            "question": "When someone is inexperienced they are said to be what color?",
-            "correct_answer": "Green",
+            "question": "The drug cartel run by Pablo Escobar originated in which South American city?",
+            "correct_answer": "Medell\u00edn",
             "incorrect_answers": [
-                "Red",
-                "Blue",
-                "Yellow"
+                "Bogot\u00e1",
+                "Quito",
+                "Cali"
             ]
         },
         "8": {
-            "question": "The Flag of the European Union has how many stars on it?",
-            "correct_answer": "12",
+            "question": "What is the famous Papa John's last name?",
+            "correct_answer": "Schnatter",
             "incorrect_answers": [
-                "10",
-                "14",
-                "16"
+                "Chowder",
+                "Williams",
+                "ANDERSON"
             ]
         },
         "9": {
-            "question": "Which country has the union jack in its flag?",
-            "correct_answer": "New Zealand",
+            "question": "What airline was the owner of the plane that crashed off the coast of Nova Scotia in 1998?",
+            "correct_answer": "Swiss Air",
             "incorrect_answers": [
-                "South Africa",
-                "Canada",
-                "Hong Kong"
+                "Air France",
+                "British Airways",
+                "TWA"
             ]
         }
     },
     "users": {
         "0": {
-            "name": "Taine",
+            "name": "Finn",
             "answers": [
                 {
-                    "question": "What was the name of the WWF professional wrestling tag team made up of the wrestlers Ax and Smash?",
-                    "correct_answer": "Demolition",
-                    "user_answer": "The Bushwhackers",
+                    "question": "What is \"dabbing\"?",
+                    "correct_answer": "A dance",
+                    "user_answer": "A language",
                     "correct": false
                 },
                 {
-                    "question": "Which sign of the zodiac is represented by the Crab?",
-                    "correct_answer": "Cancer",
-                    "user_answer": "Libra",
+                    "question": "How many colors are there in a rainbow?",
+                    "correct_answer": "7",
+                    "user_answer": "10",
                     "correct": false
                 },
                 {
-                    "question": "What type of animal was Harambe, who was shot after a child fell into it's enclosure at the Cincinnati Zoo?",
-                    "correct_answer": "Gorilla",
-                    "user_answer": "Gorilla",
+                    "question": "What is the French word for \"hat\"?",
+                    "correct_answer": "Chapeau",
+                    "user_answer": "Chapeau",
                     "correct": true
+                },
+                {
+                    "question": "Which of the following presidents is not on Mount Rushmore?",
+                    "correct_answer": "John F. Kennedy",
+                    "user_answer": "John F. Kennedy",
+                    "correct": true
+                },
+                {
+                    "question": "What is the Zodiac symbol for Gemini?",
+                    "correct_answer": "Twins",
+                    "user_answer": "Scales",
+                    "correct": false
+                },
+                {
+                    "question": "What are Panama hats made out of?",
+                    "correct_answer": "Straw",
+                    "user_answer": "Straw",
+                    "correct": true
+                },
+                {
+                    "question": "Foie gras is a French delicacy typically made from what part of a duck or goose?",
+                    "correct_answer": "Liver",
+                    "user_answer": "Liver",
+                    "correct": true
+                },
+                {
+                    "question": "The drug cartel run by Pablo Escobar originated in which South American city?",
+                    "correct_answer": "Medell\u00edn",
+                    "user_answer": "Quito",
+                    "correct": false
+                },
+                {
+                    "question": "What is the famous Papa John's last name?",
+                    "correct_answer": "Schnatter",
+                    "user_answer": "Schnatter",
+                    "correct": true
+                },
+                {
+                    "question": "What airline was the owner of the plane that crashed off the coast of Nova Scotia in 1998?",
+                    "correct_answer": "Swiss Air",
+                    "user_answer": "British Airways",
+                    "correct": false
+                }
+            ]
+        },
+        "1": {
+            "name": "Jake",
+            "answers": [
+                {
+                    "question": "What is \"dabbing\"?",
+                    "correct_answer": "A dance",
+                    "user_answer": "A medical procedure",
+                    "correct": false
                 },
                 {
                     "question": "How many colors are there in a rainbow?",
@@ -120,39 +173,116 @@
                     "correct": true
                 },
                 {
-                    "question": "Red Vines is a brand of what type of candy?",
-                    "correct_answer": "Licorice",
-                    "user_answer": "Lollipop",
+                    "question": "What is the French word for \"hat\"?",
+                    "correct_answer": "Chapeau",
+                    "user_answer": "Bonnet",
                     "correct": false
                 },
                 {
-                    "question": "What machine element is located in the center of fidget spinners?",
-                    "correct_answer": "Bearings",
-                    "user_answer": "Axles",
+                    "question": "Which of the following presidents is not on Mount Rushmore?",
+                    "correct_answer": "John F. Kennedy",
+                    "user_answer": "Theodore Roosevelt",
                     "correct": false
                 },
                 {
-                    "question": "According to the nursery rhyme, what fruit did Little Jack Horner pull out of his Christmas pie?",
-                    "correct_answer": "Plum",
-                    "user_answer": "Plum",
+                    "question": "What is the Zodiac symbol for Gemini?",
+                    "correct_answer": "Twins",
+                    "user_answer": "Fish",
+                    "correct": false
+                },
+                {
+                    "question": "What are Panama hats made out of?",
+                    "correct_answer": "Straw",
+                    "user_answer": "Straw",
                     "correct": true
                 },
                 {
-                    "question": "When someone is inexperienced they are said to be what color?",
-                    "correct_answer": "Green",
-                    "user_answer": "Red",
+                    "question": "Foie gras is a French delicacy typically made from what part of a duck or goose?",
+                    "correct_answer": "Liver",
+                    "user_answer": "Heart",
                     "correct": false
                 },
                 {
-                    "question": "The Flag of the European Union has how many stars on it?",
-                    "correct_answer": "12",
+                    "question": "The drug cartel run by Pablo Escobar originated in which South American city?",
+                    "correct_answer": "Medell\u00edn",
+                    "user_answer": "Medell\u00edn",
+                    "correct": true
+                },
+                {
+                    "question": "What is the famous Papa John's last name?",
+                    "correct_answer": "Schnatter",
+                    "user_answer": "Chowder",
+                    "correct": false
+                },
+                {
+                    "question": "What airline was the owner of the plane that crashed off the coast of Nova Scotia in 1998?",
+                    "correct_answer": "Swiss Air",
+                    "user_answer": "Air France",
+                    "correct": false
+                }
+            ]
+        },
+        "2": {
+            "name": "Taine",
+            "answers": [
+                {
+                    "question": "What is \"dabbing\"?",
+                    "correct_answer": "A dance",
+                    "user_answer": "A dance",
+                    "correct": true
+                },
+                {
+                    "question": "How many colors are there in a rainbow?",
+                    "correct_answer": "7",
                     "user_answer": "10",
                     "correct": false
                 },
                 {
-                    "question": "Which country has the union jack in its flag?",
-                    "correct_answer": "New Zealand",
-                    "user_answer": "South Africa",
+                    "question": "What is the French word for \"hat\"?",
+                    "correct_answer": "Chapeau",
+                    "user_answer": "Chapeau",
+                    "correct": true
+                },
+                {
+                    "question": "Which of the following presidents is not on Mount Rushmore?",
+                    "correct_answer": "John F. Kennedy",
+                    "user_answer": "Thomas Jefferson",
+                    "correct": false
+                },
+                {
+                    "question": "What is the Zodiac symbol for Gemini?",
+                    "correct_answer": "Twins",
+                    "user_answer": "Maiden",
+                    "correct": false
+                },
+                {
+                    "question": "What are Panama hats made out of?",
+                    "correct_answer": "Straw",
+                    "user_answer": "Flax",
+                    "correct": false
+                },
+                {
+                    "question": "Foie gras is a French delicacy typically made from what part of a duck or goose?",
+                    "correct_answer": "Liver",
+                    "user_answer": "Intestines",
+                    "correct": false
+                },
+                {
+                    "question": "The drug cartel run by Pablo Escobar originated in which South American city?",
+                    "correct_answer": "Medell\u00edn",
+                    "user_answer": "Cali",
+                    "correct": false
+                },
+                {
+                    "question": "What is the famous Papa John's last name?",
+                    "correct_answer": "Schnatter",
+                    "user_answer": "ANDERSON",
+                    "correct": false
+                },
+                {
+                    "question": "What airline was the owner of the plane that crashed off the coast of Nova Scotia in 1998?",
+                    "correct_answer": "Swiss Air",
+                    "user_answer": "TWA",
                     "correct": false
                 }
             ]
