@@ -351,14 +351,28 @@ def view_previous_quiz():
 
     # print the users
     for i, user in users.items():
-        print(f"\nName: {user['name']}")
-        print("Answers:")
         for j, answer in enumerate(user["answers"]):
-            print(f"Question {j+1}: {answer['question']}")
-            print(f"Correct answer: {answer['correct_answer']}")
-            print(f"User answer: {answer['user_answer']}")
-            print(f"Correct: {answer['correct']}")
-            input("\nPress enter to continue...\n")
+            os.system("cls")
+
+            # count the amount of correct answers
+            correct_answers = 0
+            for k in user["answers"]:
+                if k["correct"]:
+                    correct_answers += 1
+            total_questions = len(user["answers"])
+
+            box_print(f"Name: {user['name']}\nScore: {correct_answers}/{total_questions}\nPress enter view next question.")
+
+            print(f"{bcolors.BOLD}Question {j+1}: {answer['question']}{bcolors.ENDC}")
+            if(answer["correct"]):
+                print(bcolors.OKGREEN + "User answer: " + str({answer['user_answer']})[2:-2] + bcolors.ENDC)
+            else:
+                print(bcolors.FAIL + "User answer: " + str({answer['user_answer']})[2:-2] + bcolors.ENDC)
+                print(f"{bcolors.OKCYAN}Correct answer: {answer['correct_answer']}{bcolors.ENDC}")
+            
+            
+
+            input("\n")
 
 
 # This is the main function
