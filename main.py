@@ -221,7 +221,7 @@ def get_options():
     amount = verify_input(input("\nHow many questions do you want? "), 1, 50)
 
     # get the amount of players
-    players = verify_input(input("\nHow many players are there? "), 1, 10)
+    players = verify_input(input("\nHow many players are there? "), 1, 8)
 
     #users is a list of User objects
     users = []
@@ -317,7 +317,7 @@ def welcome():
         print(welcome_text)
 
      # ask the user if they want to play a quiz or view previous quizzes
-    print("\nWelcome to the quiz!\nWhat would you like to do?\n")
+    print("\nWelcome to the quiz!\nSelect an option?\n")
     print("1. Play a quiz")
     print("2. View previous quiz")
     print("3. Exit")
@@ -405,16 +405,6 @@ def main():
 
     # store the quiz
     store_quiz(questions, users)
-    
-
-    
-    
-
-
-
-
-
-
 
 # =================== MAIN ===================
 if __name__ == "__main__":
