@@ -274,7 +274,7 @@ def quiz(questions, player_number, users):
 
 
         users[player_number].add_answer({"question": question.question, "correct_answer": question.correct_answer, "user_answer": answers_list[answer-1], "correct": correct_answer_position+1 == answer})
-        print(question.correct_answer, str(answers_list))
+        # print(question.correct_answer, str(answers_list))
         input("\nPress enter to continue...")
 
 
