@@ -1,329 +1,586 @@
 {
     "quiz": {
         "0": {
-            "question": "What is the airspeed velocity of an unladen swallow?",
-            "correct_answer": "24 MPH",
+            "question": "In past times, what would a gentleman keep in his fob pocket?",
+            "correct_answer": "Watch",
             "incorrect_answers": [
-                "15 MPH",
-                "20 MPH",
-                "200 MPH"
+                "Money",
+                "Keys",
+                "Notebook"
             ]
         },
         "1": {
-            "question": "When was \"YouTube\" founded?",
-            "correct_answer": "February 14, 2005",
+            "question": "How would one say goodbye in Spanish?",
+            "correct_answer": "Adi\u00f3s",
             "incorrect_answers": [
-                "May 22, 2004",
-                "September 12, 2005",
-                "July 19, 2009"
+                " Hola",
+                "Au Revoir",
+                "Salir"
             ]
         },
         "2": {
-            "question": "Which of the following chemicals are found in eggplant seeds?",
-            "correct_answer": "Nicotine",
+            "question": "What does the 'S' stand for in the abbreviation SIM, as in SIM card? ",
+            "correct_answer": "Subscriber",
             "incorrect_answers": [
-                "Mescaline",
-                "Cyanide",
-                "Psilocybin"
+                "Single",
+                "Secure",
+                "Solid"
             ]
         },
         "3": {
-            "question": "Disney's Haunted Mansion is home to a trio of Hitchhiking Ghosts. Which of these is NOT one of them?",
-            "correct_answer": "Harry",
+            "question": "Which of these colours is NOT featured in the logo for Google?",
+            "correct_answer": "Pink",
             "incorrect_answers": [
-                "Gus",
-                "Phineas",
-                "Ezra"
+                "Yellow",
+                "Blue",
+                "Green"
             ]
         },
         "4": {
-            "question": "How long did it take the motorized window washers of the original World Trade Center to clean the entire exterior of the building?",
-            "correct_answer": "1 Month",
+            "question": "Who is depicted on the US hundred dollar bill?",
+            "correct_answer": "Benjamin Franklin",
             "incorrect_answers": [
-                "3 Weeks",
-                "1 Week",
-                "2 Months"
+                "George Washington",
+                "Abraham Lincoln",
+                "Thomas Jefferson"
             ]
         },
         "5": {
-            "question": "Which of the following languages does NOT use gender as a part of its grammar?",
-            "correct_answer": "Turkish",
+            "question": "Which one of these is not a typical European sword design?",
+            "correct_answer": "Scimitar",
             "incorrect_answers": [
-                "German",
-                "Danish",
-                "Polish"
+                "Falchion",
+                "Ulfberht",
+                "Flamberge"
             ]
         },
         "6": {
-            "question": "How many calories are in a 355 ml can of Pepsi Cola?",
-            "correct_answer": "150",
+            "question": "According to Sherlock Holmes, \"If you eliminate the impossible, whatever remains, however improbable, must be the...\"",
+            "correct_answer": "Truth",
             "incorrect_answers": [
-                "200",
-                "100",
-                "155"
+                "Answer",
+                "Cause",
+                "Source"
             ]
         },
         "7": {
-            "question": "According to the 2014-2015 Australian Bureau of Statistics, what percentage of Australians were born overseas?",
-            "correct_answer": "28%",
+            "question": "What is the name of Poland in Polish?",
+            "correct_answer": "Polska",
             "incorrect_answers": [
-                "13%",
-                "20%",
-                "7%"
+                "Pupcia",
+                "Polszka",
+                "P\u00f3land"
             ]
         },
         "8": {
-            "question": "Which product did Nokia, the telecommunications company, originally sell?",
-            "correct_answer": "Paper",
+            "question": "Which restaurant's mascot is a clown?",
+            "correct_answer": "McDonald's",
             "incorrect_answers": [
-                "Phones",
-                "Computers",
-                "Processors"
+                "Whataburger",
+                "Burger King",
+                "Sonic"
             ]
         },
         "9": {
-            "question": "In flight systems, what does the initialism \"TCAS\" stand for?",
-            "correct_answer": "Traffic Collision Avoidance System",
+            "question": "Which sign of the zodiac comes between Virgo and Scorpio?",
+            "correct_answer": "Libra",
             "incorrect_answers": [
-                "Traffic Communication Alert System",
-                "Traffic Configuration Alignment System",
-                "Traffic Call-sign Abbreviation System"
+                "Gemini",
+                "Taurus",
+                "Capricorn"
             ]
         },
         "10": {
-            "question": "Where is Apple Inc. headquartered?",
-            "correct_answer": "Cupertino, California",
+            "question": "What is Tasmania?",
+            "correct_answer": "An Australian State",
             "incorrect_answers": [
-                "Redwood City, California",
-                "Redmond, Washington",
-                "Santa Monica, CA"
+                "A flavor of Ben and Jerry's ice-cream",
+                "A Psychological Disorder",
+                "The Name of a Warner Brothers Cartoon Character"
             ]
         },
         "11": {
-            "question": "In the MMO RPG \"Realm of the Mad God\", what dungeon is widely considered to be the most difficult?",
-            "correct_answer": "The Shatter's",
+            "question": "According to the nursery rhyme, what fruit did Little Jack Horner pull out of his Christmas pie?",
+            "correct_answer": "Plum",
             "incorrect_answers": [
-                "Snake Pit",
-                "The Tomb of the Acient's",
-                "The Puppet Master's Theater"
+                "Apple",
+                "Peach",
+                "Pear"
             ]
         },
         "12": {
-            "question": "What is the weight of a Gold Bar in Fallout: New Vegas?",
-            "correct_answer": "35 Pounds",
+            "question": "When someone is cowardly, they are said to have what color belly?",
+            "correct_answer": "Yellow",
             "incorrect_answers": [
-                "30 Pounds",
-                "40 Pounds",
-                "32.50 Pounds"
+                "Green",
+                "Red",
+                "Blue"
             ]
         },
         "13": {
-            "question": "What is the most commonly used noun in the English language?",
-            "correct_answer": "Time",
+            "question": "The Canadian $1 coin is colloquially known as a what?",
+            "correct_answer": "Loonie",
             "incorrect_answers": [
-                "Home",
-                "Water",
-                "Man"
+                "Boolie",
+                "Foolie",
+                "Moodie"
             ]
         },
         "14": {
-            "question": "The word \"aprosexia\" means which of the following?",
-            "correct_answer": "The inability to concentrate on anything",
+            "question": "Which of the following is not the host of a program on NPR?",
+            "correct_answer": "Ben Shapiro",
             "incorrect_answers": [
-                "The inability to make decisions",
-                "A feverish desire to rip one's clothes off",
-                "The inability to stand up"
+                "Terry Gross",
+                "Ira Glass",
+                "Peter Sagal"
+            ]
+        },
+        "15": {
+            "question": "The drug cartel run by Pablo Escobar originated in which South American city?",
+            "correct_answer": "Medell\u00edn",
+            "incorrect_answers": [
+                "Bogot\u00e1",
+                "Quito",
+                "Cali"
+            ]
+        },
+        "16": {
+            "question": "Which of the following blood component forms a plug at the site of injuries?",
+            "correct_answer": "Platelets",
+            "incorrect_answers": [
+                "Red blood cells",
+                "White blood cells",
+                "Blood plasma"
+            ]
+        },
+        "17": {
+            "question": "What is the profession of Elon Musk's mom, Maye Musk?",
+            "correct_answer": "Model",
+            "incorrect_answers": [
+                "Professor",
+                "Biologist",
+                "Musician"
+            ]
+        },
+        "18": {
+            "question": "Which country has the union jack in its flag?",
+            "correct_answer": "New Zealand",
+            "incorrect_answers": [
+                "South Africa",
+                "Canada",
+                "Hong Kong"
+            ]
+        },
+        "19": {
+            "question": "What kind of aircraft was developed by Igor Sikorsky in the United States in 1942?",
+            "correct_answer": "Helicopter",
+            "incorrect_answers": [
+                "Stealth Blimp",
+                "Jet",
+                "Space Capsule"
+            ]
+        },
+        "20": {
+            "question": "Who invented the first ever chocolate bar, in 1847?",
+            "correct_answer": "Joseph Fry",
+            "incorrect_answers": [
+                "Andrew Johnson",
+                "John Cadbury",
+                "John Tyler"
             ]
         }
     },
     "users": {
         "0": {
-            "name": "E",
+            "name": "Rish",
             "answers": [
                 {
-                    "question": "What is the airspeed velocity of an unladen swallow?",
-                    "correct_answer": "24 MPH",
-                    "user_answer": "24 MPH",
-                    "correct": true
-                },
-                {
-                    "question": "When was \"YouTube\" founded?",
-                    "correct_answer": "February 14, 2005",
-                    "user_answer": "February 14, 2005",
-                    "correct": true
-                },
-                {
-                    "question": "Which of the following chemicals are found in eggplant seeds?",
-                    "correct_answer": "Nicotine",
-                    "user_answer": "Mescaline",
+                    "question": "In past times, what would a gentleman keep in his fob pocket?",
+                    "correct_answer": "Watch",
+                    "user_answer": "Keys",
                     "correct": false
                 },
                 {
-                    "question": "Disney's Haunted Mansion is home to a trio of Hitchhiking Ghosts. Which of these is NOT one of them?",
-                    "correct_answer": "Harry",
-                    "user_answer": "Phineas",
-                    "correct": false
-                },
-                {
-                    "question": "How long did it take the motorized window washers of the original World Trade Center to clean the entire exterior of the building?",
-                    "correct_answer": "1 Month",
-                    "user_answer": "1 Month",
+                    "question": "How would one say goodbye in Spanish?",
+                    "correct_answer": "Adi\u00f3s",
+                    "user_answer": "Adi\u00f3s",
                     "correct": true
                 },
                 {
-                    "question": "Which of the following languages does NOT use gender as a part of its grammar?",
-                    "correct_answer": "Turkish",
-                    "user_answer": "Turkish",
-                    "correct": true
-                },
-                {
-                    "question": "How many calories are in a 355 ml can of Pepsi Cola?",
-                    "correct_answer": "150",
-                    "user_answer": "155",
+                    "question": "What does the 'S' stand for in the abbreviation SIM, as in SIM card? ",
+                    "correct_answer": "Subscriber",
+                    "user_answer": "Secure",
                     "correct": false
                 },
                 {
-                    "question": "According to the 2014-2015 Australian Bureau of Statistics, what percentage of Australians were born overseas?",
-                    "correct_answer": "28%",
-                    "user_answer": "28%",
+                    "question": "Which of these colours is NOT featured in the logo for Google?",
+                    "correct_answer": "Pink",
+                    "user_answer": "Pink",
                     "correct": true
                 },
                 {
-                    "question": "Which product did Nokia, the telecommunications company, originally sell?",
-                    "correct_answer": "Paper",
-                    "user_answer": "Paper",
+                    "question": "Who is depicted on the US hundred dollar bill?",
+                    "correct_answer": "Benjamin Franklin",
+                    "user_answer": "Thomas Jefferson",
+                    "correct": false
+                },
+                {
+                    "question": "Which one of these is not a typical European sword design?",
+                    "correct_answer": "Scimitar",
+                    "user_answer": "Falchion",
+                    "correct": false
+                },
+                {
+                    "question": "According to Sherlock Holmes, \"If you eliminate the impossible, whatever remains, however improbable, must be the...\"",
+                    "correct_answer": "Truth",
+                    "user_answer": "Truth",
                     "correct": true
                 },
                 {
-                    "question": "In flight systems, what does the initialism \"TCAS\" stand for?",
-                    "correct_answer": "Traffic Collision Avoidance System",
-                    "user_answer": "Traffic Collision Avoidance System",
+                    "question": "What is the name of Poland in Polish?",
+                    "correct_answer": "Polska",
+                    "user_answer": "Polska",
                     "correct": true
                 },
                 {
-                    "question": "Where is Apple Inc. headquartered?",
-                    "correct_answer": "Cupertino, California",
-                    "user_answer": "Cupertino, California",
+                    "question": "Which restaurant's mascot is a clown?",
+                    "correct_answer": "McDonald's",
+                    "user_answer": "McDonald's",
                     "correct": true
                 },
                 {
-                    "question": "In the MMO RPG \"Realm of the Mad God\", what dungeon is widely considered to be the most difficult?",
-                    "correct_answer": "The Shatter's",
-                    "user_answer": "The Tomb of the Acient's",
+                    "question": "Which sign of the zodiac comes between Virgo and Scorpio?",
+                    "correct_answer": "Libra",
+                    "user_answer": "Capricorn",
                     "correct": false
                 },
                 {
-                    "question": "What is the weight of a Gold Bar in Fallout: New Vegas?",
-                    "correct_answer": "35 Pounds",
-                    "user_answer": "32.50 Pounds",
+                    "question": "What is Tasmania?",
+                    "correct_answer": "An Australian State",
+                    "user_answer": "An Australian State",
+                    "correct": true
+                },
+                {
+                    "question": "According to the nursery rhyme, what fruit did Little Jack Horner pull out of his Christmas pie?",
+                    "correct_answer": "Plum",
+                    "user_answer": "Plum",
+                    "correct": true
+                },
+                {
+                    "question": "When someone is cowardly, they are said to have what color belly?",
+                    "correct_answer": "Yellow",
+                    "user_answer": "Yellow",
+                    "correct": true
+                },
+                {
+                    "question": "The Canadian $1 coin is colloquially known as a what?",
+                    "correct_answer": "Loonie",
+                    "user_answer": "Foolie",
                     "correct": false
                 },
                 {
-                    "question": "What is the most commonly used noun in the English language?",
-                    "correct_answer": "Time",
-                    "user_answer": "Home",
+                    "question": "Which of the following is not the host of a program on NPR?",
+                    "correct_answer": "Ben Shapiro",
+                    "user_answer": "Terry Gross",
                     "correct": false
                 },
                 {
-                    "question": "The word \"aprosexia\" means which of the following?",
-                    "correct_answer": "The inability to concentrate on anything",
-                    "user_answer": "A feverish desire to rip one's clothes off",
+                    "question": "The drug cartel run by Pablo Escobar originated in which South American city?",
+                    "correct_answer": "Medell\u00edn",
+                    "user_answer": "Bogot\u00e1",
                     "correct": false
+                },
+                {
+                    "question": "Which of the following blood component forms a plug at the site of injuries?",
+                    "correct_answer": "Platelets",
+                    "user_answer": "Red blood cells",
+                    "correct": false
+                },
+                {
+                    "question": "What is the profession of Elon Musk's mom, Maye Musk?",
+                    "correct_answer": "Model",
+                    "user_answer": "Model",
+                    "correct": true
+                },
+                {
+                    "question": "Which country has the union jack in its flag?",
+                    "correct_answer": "New Zealand",
+                    "user_answer": "New Zealand",
+                    "correct": true
+                },
+                {
+                    "question": "What kind of aircraft was developed by Igor Sikorsky in the United States in 1942?",
+                    "correct_answer": "Helicopter",
+                    "user_answer": "Helicopter",
+                    "correct": true
+                },
+                {
+                    "question": "Who invented the first ever chocolate bar, in 1847?",
+                    "correct_answer": "Joseph Fry",
+                    "user_answer": "Joseph Fry",
+                    "correct": true
                 }
             ]
         },
         "1": {
-            "name": "T",
+            "name": "Taine",
             "answers": [
                 {
-                    "question": "What is the airspeed velocity of an unladen swallow?",
-                    "correct_answer": "24 MPH",
-                    "user_answer": "20 MPH",
-                    "correct": false
-                },
-                {
-                    "question": "When was \"YouTube\" founded?",
-                    "correct_answer": "February 14, 2005",
-                    "user_answer": "February 14, 2005",
+                    "question": "In past times, what would a gentleman keep in his fob pocket?",
+                    "correct_answer": "Watch",
+                    "user_answer": "Watch",
                     "correct": true
                 },
                 {
-                    "question": "Which of the following chemicals are found in eggplant seeds?",
-                    "correct_answer": "Nicotine",
-                    "user_answer": "Cyanide",
-                    "correct": false
-                },
-                {
-                    "question": "Disney's Haunted Mansion is home to a trio of Hitchhiking Ghosts. Which of these is NOT one of them?",
-                    "correct_answer": "Harry",
-                    "user_answer": "Harry",
+                    "question": "How would one say goodbye in Spanish?",
+                    "correct_answer": "Adi\u00f3s",
+                    "user_answer": "Adi\u00f3s",
                     "correct": true
                 },
                 {
-                    "question": "How long did it take the motorized window washers of the original World Trade Center to clean the entire exterior of the building?",
-                    "correct_answer": "1 Month",
-                    "user_answer": "3 Weeks",
+                    "question": "What does the 'S' stand for in the abbreviation SIM, as in SIM card? ",
+                    "correct_answer": "Subscriber",
+                    "user_answer": "Secure",
                     "correct": false
                 },
                 {
-                    "question": "Which of the following languages does NOT use gender as a part of its grammar?",
-                    "correct_answer": "Turkish",
-                    "user_answer": "German",
-                    "correct": false
-                },
-                {
-                    "question": "How many calories are in a 355 ml can of Pepsi Cola?",
-                    "correct_answer": "150",
-                    "user_answer": "155",
-                    "correct": false
-                },
-                {
-                    "question": "According to the 2014-2015 Australian Bureau of Statistics, what percentage of Australians were born overseas?",
-                    "correct_answer": "28%",
-                    "user_answer": "28%",
+                    "question": "Which of these colours is NOT featured in the logo for Google?",
+                    "correct_answer": "Pink",
+                    "user_answer": "Pink",
                     "correct": true
                 },
                 {
-                    "question": "Which product did Nokia, the telecommunications company, originally sell?",
-                    "correct_answer": "Paper",
-                    "user_answer": "Paper",
+                    "question": "Who is depicted on the US hundred dollar bill?",
+                    "correct_answer": "Benjamin Franklin",
+                    "user_answer": "George Washington",
+                    "correct": false
+                },
+                {
+                    "question": "Which one of these is not a typical European sword design?",
+                    "correct_answer": "Scimitar",
+                    "user_answer": "Scimitar",
                     "correct": true
                 },
                 {
-                    "question": "In flight systems, what does the initialism \"TCAS\" stand for?",
-                    "correct_answer": "Traffic Collision Avoidance System",
-                    "user_answer": "Traffic Call-sign Abbreviation System",
-                    "correct": false
-                },
-                {
-                    "question": "Where is Apple Inc. headquartered?",
-                    "correct_answer": "Cupertino, California",
-                    "user_answer": "Santa Monica, CA",
-                    "correct": false
-                },
-                {
-                    "question": "In the MMO RPG \"Realm of the Mad God\", what dungeon is widely considered to be the most difficult?",
-                    "correct_answer": "The Shatter's",
-                    "user_answer": "The Puppet Master's Theater",
-                    "correct": false
-                },
-                {
-                    "question": "What is the weight of a Gold Bar in Fallout: New Vegas?",
-                    "correct_answer": "35 Pounds",
-                    "user_answer": "30 Pounds",
-                    "correct": false
-                },
-                {
-                    "question": "What is the most commonly used noun in the English language?",
-                    "correct_answer": "Time",
-                    "user_answer": "Man",
-                    "correct": false
-                },
-                {
-                    "question": "The word \"aprosexia\" means which of the following?",
-                    "correct_answer": "The inability to concentrate on anything",
-                    "user_answer": "The inability to concentrate on anything",
+                    "question": "According to Sherlock Holmes, \"If you eliminate the impossible, whatever remains, however improbable, must be the...\"",
+                    "correct_answer": "Truth",
+                    "user_answer": "Truth",
                     "correct": true
+                },
+                {
+                    "question": "What is the name of Poland in Polish?",
+                    "correct_answer": "Polska",
+                    "user_answer": "Polszka",
+                    "correct": false
+                },
+                {
+                    "question": "Which restaurant's mascot is a clown?",
+                    "correct_answer": "McDonald's",
+                    "user_answer": "McDonald's",
+                    "correct": true
+                },
+                {
+                    "question": "Which sign of the zodiac comes between Virgo and Scorpio?",
+                    "correct_answer": "Libra",
+                    "user_answer": "Libra",
+                    "correct": true
+                },
+                {
+                    "question": "What is Tasmania?",
+                    "correct_answer": "An Australian State",
+                    "user_answer": "An Australian State",
+                    "correct": true
+                },
+                {
+                    "question": "According to the nursery rhyme, what fruit did Little Jack Horner pull out of his Christmas pie?",
+                    "correct_answer": "Plum",
+                    "user_answer": "Peach",
+                    "correct": false
+                },
+                {
+                    "question": "When someone is cowardly, they are said to have what color belly?",
+                    "correct_answer": "Yellow",
+                    "user_answer": "Green",
+                    "correct": false
+                },
+                {
+                    "question": "The Canadian $1 coin is colloquially known as a what?",
+                    "correct_answer": "Loonie",
+                    "user_answer": "Boolie",
+                    "correct": false
+                },
+                {
+                    "question": "Which of the following is not the host of a program on NPR?",
+                    "correct_answer": "Ben Shapiro",
+                    "user_answer": "Ira Glass",
+                    "correct": false
+                },
+                {
+                    "question": "The drug cartel run by Pablo Escobar originated in which South American city?",
+                    "correct_answer": "Medell\u00edn",
+                    "user_answer": "Cali",
+                    "correct": false
+                },
+                {
+                    "question": "Which of the following blood component forms a plug at the site of injuries?",
+                    "correct_answer": "Platelets",
+                    "user_answer": "Red blood cells",
+                    "correct": false
+                },
+                {
+                    "question": "What is the profession of Elon Musk's mom, Maye Musk?",
+                    "correct_answer": "Model",
+                    "user_answer": "Model",
+                    "correct": true
+                },
+                {
+                    "question": "Which country has the union jack in its flag?",
+                    "correct_answer": "New Zealand",
+                    "user_answer": "New Zealand",
+                    "correct": true
+                },
+                {
+                    "question": "What kind of aircraft was developed by Igor Sikorsky in the United States in 1942?",
+                    "correct_answer": "Helicopter",
+                    "user_answer": "Jet",
+                    "correct": false
+                },
+                {
+                    "question": "Who invented the first ever chocolate bar, in 1847?",
+                    "correct_answer": "Joseph Fry",
+                    "user_answer": "Joseph Fry",
+                    "correct": true
+                }
+            ]
+        },
+        "2": {
+            "name": "Cooper",
+            "answers": [
+                {
+                    "question": "In past times, what would a gentleman keep in his fob pocket?",
+                    "correct_answer": "Watch",
+                    "user_answer": "Keys",
+                    "correct": false
+                },
+                {
+                    "question": "How would one say goodbye in Spanish?",
+                    "correct_answer": "Adi\u00f3s",
+                    "user_answer": "Au Revoir",
+                    "correct": false
+                },
+                {
+                    "question": "What does the 'S' stand for in the abbreviation SIM, as in SIM card? ",
+                    "correct_answer": "Subscriber",
+                    "user_answer": "Solid",
+                    "correct": false
+                },
+                {
+                    "question": "Which of these colours is NOT featured in the logo for Google?",
+                    "correct_answer": "Pink",
+                    "user_answer": "Pink",
+                    "correct": true
+                },
+                {
+                    "question": "Who is depicted on the US hundred dollar bill?",
+                    "correct_answer": "Benjamin Franklin",
+                    "user_answer": "Abraham Lincoln",
+                    "correct": false
+                },
+                {
+                    "question": "Which one of these is not a typical European sword design?",
+                    "correct_answer": "Scimitar",
+                    "user_answer": "Scimitar",
+                    "correct": true
+                },
+                {
+                    "question": "According to Sherlock Holmes, \"If you eliminate the impossible, whatever remains, however improbable, must be the...\"",
+                    "correct_answer": "Truth",
+                    "user_answer": "Answer",
+                    "correct": false
+                },
+                {
+                    "question": "What is the name of Poland in Polish?",
+                    "correct_answer": "Polska",
+                    "user_answer": "P\u00f3land",
+                    "correct": false
+                },
+                {
+                    "question": "Which restaurant's mascot is a clown?",
+                    "correct_answer": "McDonald's",
+                    "user_answer": "McDonald's",
+                    "correct": true
+                },
+                {
+                    "question": "Which sign of the zodiac comes between Virgo and Scorpio?",
+                    "correct_answer": "Libra",
+                    "user_answer": "Capricorn",
+                    "correct": false
+                },
+                {
+                    "question": "What is Tasmania?",
+                    "correct_answer": "An Australian State",
+                    "user_answer": "An Australian State",
+                    "correct": true
+                },
+                {
+                    "question": "According to the nursery rhyme, what fruit did Little Jack Horner pull out of his Christmas pie?",
+                    "correct_answer": "Plum",
+                    "user_answer": "Plum",
+                    "correct": true
+                },
+                {
+                    "question": "When someone is cowardly, they are said to have what color belly?",
+                    "correct_answer": "Yellow",
+                    "user_answer": "Yellow",
+                    "correct": true
+                },
+                {
+                    "question": "The Canadian $1 coin is colloquially known as a what?",
+                    "correct_answer": "Loonie",
+                    "user_answer": "Boolie",
+                    "correct": false
+                },
+                {
+                    "question": "Which of the following is not the host of a program on NPR?",
+                    "correct_answer": "Ben Shapiro",
+                    "user_answer": "Ira Glass",
+                    "correct": false
+                },
+                {
+                    "question": "The drug cartel run by Pablo Escobar originated in which South American city?",
+                    "correct_answer": "Medell\u00edn",
+                    "user_answer": "Cali",
+                    "correct": false
+                },
+                {
+                    "question": "Which of the following blood component forms a plug at the site of injuries?",
+                    "correct_answer": "Platelets",
+                    "user_answer": "Platelets",
+                    "correct": true
+                },
+                {
+                    "question": "What is the profession of Elon Musk's mom, Maye Musk?",
+                    "correct_answer": "Model",
+                    "user_answer": "Professor",
+                    "correct": false
+                },
+                {
+                    "question": "Which country has the union jack in its flag?",
+                    "correct_answer": "New Zealand",
+                    "user_answer": "South Africa",
+                    "correct": false
+                },
+                {
+                    "question": "What kind of aircraft was developed by Igor Sikorsky in the United States in 1942?",
+                    "correct_answer": "Helicopter",
+                    "user_answer": "Jet",
+                    "correct": false
+                },
+                {
+                    "question": "Who invented the first ever chocolate bar, in 1847?",
+                    "correct_answer": "Joseph Fry",
+                    "user_answer": "John Cadbury",
+                    "correct": false
                 }
             ]
         }

@@ -157,6 +157,11 @@ def get_questions(topic, difficulty, amount):
         for i in range(len(question.incorrect_answers)):
             question.incorrect_answers[i] = base64.b64decode(question.incorrect_answers[i]).decode("utf-8")
 
+    if(len(questions) == 0):
+        print("No questions were returned by the API. Code: " + data["response_code"])
+        input("Check connection or try different settings. Press enter to exit.")
+        sys.exit()
+
     return questions
 
 
@@ -218,7 +223,7 @@ def get_options():
     difficulty = verify_input(input("Enter the number of the difficulty: "), 1, len(difficulties))
 
     # get the amount of questions
-    amount = verify_input(input("\nHow many questions do you want? "), 1, 50)
+    amount = verify_input(input("\nHow many questions do you want? "), 1, 25)
 
     # get the amount of players
     players = verify_input(input("\nHow many players are there? "), 1, 8)
