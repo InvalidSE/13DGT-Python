@@ -1,34 +1,5 @@
-# 13DGT Quiz
+# 13DGT Quiz by InvalidSE - https://github.com/InvalidSE - 2023
 # API: https://opentdb.com/api_config.php
-
-# SPECS
-
-# Must use classes
-# Settings must include: Topics, Levels of difficulty, number of users.
-# At the end of the quiz the full results will be displayed.
-# The results will be saved to a file.
-# The results will be displayed in a table.
-# If you have multiple users you may decide to display updated scores after a set number of, or each question.
-# let the user decide how many questions they would like to do.
-# Randomise the order of the questions from the full list.
-# Different topic and difficulty Levels at the start of the program.
-# The program must be able to allow for multiple users
-# Read from a file and randomise the results
-# Display the information in a meaningful way
-# Comment code and appropriate variable names
-# Evidence of debugging and error checking
-# Flexible and robust.
-
-# You must use:
-# Object oriented Classes
-# Multidimensional arrays
-# Module(s)
-# Strings, Numbers and Boolean data types
-
-# use ╗ ╝ ╚ ╔ ═ ║ to draw boxes around the questions and text
-# as I have to read / write to a file because of the assignment, I will store results in a json file
-
-
 
 # =================== VARIABLES ===================
 
@@ -39,7 +10,6 @@ welcome_text = """
 | |___) | |_| | |_| | | || |_| | |_| | |/ / 
 |_|____/|____/ \____| |_| \__\_\\\__,_|_/___|
 """
-
 topics = {
     "General Knowledge": 9,
     "Books": 10,
@@ -134,13 +104,12 @@ class bcolors:
     ENDC = '\033[0m'
     BOLD = '\033[1m'
     UNDERLINE = '\033[4m'
-    
 
 
 # =================== FUNCTIONS ===================
 
 
-# This function gets the questions from the API
+# This function gets the questions from the API and returns them as a list of Question objects
 def get_questions(topic, difficulty, amount):
     url = f"https://opentdb.com/api.php?amount={amount}&category={topic}&difficulty={difficulty}&type=multiple&encode=base64"
     # print(url)
@@ -163,7 +132,6 @@ def get_questions(topic, difficulty, amount):
         sys.exit()
 
     return questions
-
 
 
 # This function verifies that the input is a number between the min and max
@@ -238,10 +206,10 @@ def get_options():
             name = input(f"What is the name of player {i+1}? ")
         users.append(User(name))
             
-    
     return topic, difficulty, amount, users
 
 
+# The main quiz function
 def quiz(questions, player_number, users):
     os.system("cls")
     print(f"Player {player_number+1}/{len(users)}, {users[player_number].name}")
@@ -281,8 +249,6 @@ def quiz(questions, player_number, users):
         users[player_number].add_answer({"question": question.question, "correct_answer": question.correct_answer, "user_answer": answers_list[answer-1], "correct": correct_answer_position+1 == answer})
         # print(question.correct_answer, str(answers_list))
         input("\nPress enter to continue...")
-
-
 
 
 # This function prints the final results
@@ -351,6 +317,7 @@ def store_quiz(questions, users):
     with open("quiz.json", "w") as file:
         json.dump(quiz_dict, file, indent=4)
 
+
 # View previous quiz
 def view_previous_quiz():
 
@@ -383,8 +350,6 @@ def view_previous_quiz():
                 print(bcolors.FAIL + "User answer: " + str({answer['user_answer']})[2:-2] + bcolors.ENDC)
                 print(f"{bcolors.OKCYAN}Correct answer: {answer['correct_answer']}{bcolors.ENDC}")
             
-            
-
             input("\n")
 
 
@@ -410,6 +375,7 @@ def main():
 
     # store the quiz
     store_quiz(questions, users)
+
 
 # =================== MAIN ===================
 if __name__ == "__main__":
