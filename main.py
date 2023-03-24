@@ -1,5 +1,5 @@
 # 13DGT Quiz by InvalidSE - https://github.com/InvalidSE - 2023
-# API: https://opentdb.com/api_config.php
+# API: https://opentdb.com/api_config.php 
 
 # =================== VARIABLES ===================
 
@@ -127,7 +127,7 @@ def get_questions(topic, difficulty, amount):
             question.incorrect_answers[i] = base64.b64decode(question.incorrect_answers[i]).decode("utf-8")
 
     if(len(questions) == 0):
-        print("No questions were returned by the API. Code: " + data["response_code"])
+        print("No questions were returned by the API. Code: " + str(data["response_code"]))
         input("Check connection or try different settings. Press enter to exit.")
         sys.exit()
 
