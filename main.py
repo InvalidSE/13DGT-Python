@@ -326,6 +326,20 @@ def store_quiz(questions, users):
 # View previous quiz
 def view_previous_quiz():
 
+    # check if file exists
+    if not os.path.exists("quiz.json") or os.stat("quiz.json").st_size == 0 :
+        print("No previous quiz found.")
+        input("\nPress enter to continue...")
+        return
+    
+    # check if user answers exist
+    with open("quiz.json", "r") as file:
+        quiz_dict = json.load(file)
+    if "users" not in quiz_dict:
+        print("No previous quiz found.")
+        input("\nPress enter to continue...")
+        return
+
     # open the json file
     with open("quiz.json", "r") as file:
         quiz_dict = json.load(file)
