@@ -39,10 +39,10 @@ topics = {
 difficulties = ["easy", "medium", "hard"]
 
 # =================== IMPORTS ===================
+from random import randint, shuffle
+from time import sleep
 import os
 import json
-import random
-import time
 import sys
 import base64
 
@@ -51,7 +51,12 @@ try:
 except ModuleNotFoundError:
     input("The requests module is not installed. Press enter to install it, else press ctrl+c to exit.")
     os.system("python -m pip install requests")
-    import requests
+    try:
+        import requests
+    except ModuleNotFoundError:
+        print("Failed to install requests module. Please install it manually.")
+        input("Press enter to exit.")
+        sys.exit()
 
 # =================== CLASSES ===================
 
@@ -63,7 +68,7 @@ class Question:
         self.correct_answer = correct_answer
         self.incorrect_answers = incorrect_answers
         self.all_answers = incorrect_answers + [correct_answer]
-        random.shuffle(self.all_answers)
+        shuffle(self.all_answers)
 
     def __str__(self):
         return self.question
@@ -220,7 +225,7 @@ def quiz(questions, player_number, users):
         os.system("cls")
         box_print(f"Question {i+1}/{len(questions)}\n{question.question}")
         
-        correct_answer_position = random.randint(0, len(question.all_answers)-1)
+        correct_answer_position = randint(0, len(question.all_answers)-1)
         
         answers = question.incorrect_answers.copy()
         answers.insert(correct_answer_position, question.correct_answer)
@@ -364,7 +369,7 @@ def main():
 
     # start the game
     print(f"Starting the game with {len(users)} players...")
-    time.sleep(1)
+    sleep(1)
 
     # start the quiz
     for i, user in enumerate(users):
