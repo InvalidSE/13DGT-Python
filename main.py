@@ -58,6 +58,12 @@ except ModuleNotFoundError:
         input("Press enter to exit.")
         sys.exit()
 
+# Get OS and the clear screen command
+if os.name == "nt":
+    clear_screen = "cls"
+else:
+    clear_screen = "clear"
+
 # =================== CLASSES ===================
 
 
@@ -216,13 +222,13 @@ def get_options():
 
 # The main quiz function
 def quiz(questions, player_number, users):
-    os.system("cls")
+    os.system(clear_screen)
     print(f"Player {player_number+1}/{len(users)}, {users[player_number].name}")
     input(f"Press enter to start the game...")
 
     # start the quiz
     for i, question in enumerate(questions):
-        os.system("cls")
+        os.system(clear_screen)
         box_print(f"Question {i+1}/{len(questions)}\n{question.question}")
         
         correct_answer_position = randint(0, len(question.all_answers)-1)
@@ -258,7 +264,7 @@ def quiz(questions, player_number, users):
 
 # This function prints the final results
 def final_results(users, questions):
-    os.system("cls")
+    os.system(clear_screen)
     print("Final results:")
     # sort the users by score
     users.sort(key=lambda x: x.score, reverse=True)
@@ -286,7 +292,7 @@ def final_results(users, questions):
 
 # Welcome message
 def welcome():
-    os.system("cls")
+    os.system(clear_screen)
     # print welcome text if the console is big enough
     terminal_size = os.get_terminal_size()
     if terminal_size.columns >= 44:
@@ -351,7 +357,7 @@ def view_previous_quiz():
     # print the users
     for i, user in users.items():
         for j, answer in enumerate(user["answers"]):
-            os.system("cls")
+            os.system(clear_screen)
 
             # count the amount of correct answers
             correct_answers = 0
