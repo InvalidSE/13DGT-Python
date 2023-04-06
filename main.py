@@ -124,13 +124,37 @@ class bcolors:
 def get_questions(topic, difficulty, amount):
     url = f"https://opentdb.com/api.php?amount={amount}&category={topic}&difficulty={difficulty}&type=multiple&encode=base64"
     # print(url)
-    response = requests.get(url)
+    try:
+        response = requests.get(url)
+    except requests.exceptions.ConnectionError:
+        print("The API returned an error.")
+        input("Check connection or try different settings. Press enter to exit.")
+        sys.exit()
+    # check for a valid response
+    if(response.status_code != 200):
+        print("The API returned an error. Code: " + str(response.status_code))
+        input("Check connection or try different settings. Press enter to exit.")
+        sys.exit()
     data = json.loads(response.text)
+    if(data["response_code"] == 2 or data["response_code"] == 3 or data["response_code"] == 4):
+        print("The API returned an error. Code: " + str(data["response_code"]))
+        input("Check connection or try different settings. Press enter to exit.")
+        sys.exit()
+    if(data["response_code"] == 1):
+        print("There are not enough questions to match your request. Retrying with less questions.")
+        while data["response_code"] == 1:
+            amount -= 1
+            url = f"https://opentdb.com/api.php?amount={amount}&category={topic}&difficulty={difficulty}&type=multiple&encode=base64"
+            response = requests.get(url)
+            data = json.loads(response.text)
+        print(f"Successfully got questions with {amount} questions.")
+        sleep(1)
+        
     questions = []
     for question in data["results"]:
         questions.append(Question(question["question"], question["correct_answer"], question["incorrect_answers"]))
 
-    # replace html entities with the actual characters
+    # Decode the Base64 encoding
     for question in questions:
         question.question = base64.b64decode(question.question).decode("utf-8")
         question.correct_answer = base64.b64decode(question.correct_answer).decode("utf-8")
@@ -299,7 +323,7 @@ def welcome():
         print(welcome_text)
 
      # ask the user if they want to play a quiz or view previous quizzes
-    print("\nWelcome to the quiz!\nSelect an option?\n")
+    print("\nWelcome to the quiz!\nSelect an option:\n")
     print("1. Play a quiz")
     print("2. View previous quiz")
     print("3. Exit")
