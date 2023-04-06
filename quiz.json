@@ -1,84 +1,497 @@
 {
     "quiz": {
         "0": {
-            "question": "In Greek Mythology, who killed Achilles?",
-            "correct_answer": "Paris",
+            "question": "Who wrote \"Harry Potter\"?",
+            "correct_answer": "J.K. Rowling",
             "incorrect_answers": [
-                "Hector",
-                "Helen",
-                "Pericles"
+                "J.R.R. Tolkien",
+                "Terry Pratchett",
+                "Daniel Radcliffe"
             ]
         },
         "1": {
-            "question": "A minotaur is half human half what?",
-            "correct_answer": "Bull",
+            "question": "George Orwell wrote this book, which is often considered a statement on government oversight.",
+            "correct_answer": "1984",
             "incorrect_answers": [
-                "Cow",
-                "Horse",
-                "Eagle"
+                "The Old Man and the Sea",
+                "Catcher and the Rye",
+                "To Kill a Mockingbird"
             ]
         },
         "2": {
-            "question": "What is the name of the Greek god of blacksmiths?",
-            "correct_answer": "Hephaestus",
+            "question": "Which famous book is sub-titled 'The Modern Prometheus'?",
+            "correct_answer": "Frankenstein",
             "incorrect_answers": [
-                "Dyntos",
-                "Vulcan",
-                "Artagatus"
+                "Dracula",
+                "The Strange Case of Dr. Jekyll and Mr. Hyde ",
+                "The Legend of Sleepy Hollow"
             ]
         },
         "3": {
-            "question": "Which of the following is not one of the Greek Fates?",
-            "correct_answer": "Narcissus",
+            "question": "What was the name of Captain Nemo's submarine in \"20,000 Leagues Under the Sea\"?",
+            "correct_answer": "The Nautilus",
             "incorrect_answers": [
-                "Clotho",
-                "Atropos",
-                "Lachesis"
+                "The Neptune",
+                "The Poseidon  ",
+                "The Atlantis"
             ]
         },
         "4": {
-            "question": "The Maori hold that which island nation was founded by Kupe, who discovered it under a long white cloud?",
-            "correct_answer": "New Zealand",
+            "question": "Which of the following is the world's best-selling book?",
+            "correct_answer": "The Lord of the Rings",
             "incorrect_answers": [
-                "Vanuatu",
-                "Fiji",
-                "Hawaii"
+                "The Little Prince",
+                "Harry Potter and the Philosopher's Stone",
+                "The Da Vinci Code"
+            ]
+        },
+        "5": {
+            "question": "Who wrote the novel 'Fear And Loathing In Las Vegas'?",
+            "correct_answer": "Hunter S. Thompson",
+            "incorrect_answers": [
+                "F. Scott Fitzgerald",
+                "Henry Miller",
+                "William S. Burroughs"
+            ]
+        },
+        "6": {
+            "question": "\"Green Eggs And Ham\" is a book by which author?",
+            "correct_answer": "Dr. Seuss",
+            "incorrect_answers": [
+                "Beatrix Potter",
+                "Roald Dahl",
+                "A.A. Milne"
+            ]
+        },
+        "7": {
+            "question": "Which famous spy novelist wrote the childrens' story \"Chitty-Chitty-Bang-Bang\"?",
+            "correct_answer": "Ian Fleming",
+            "incorrect_answers": [
+                "Joseph Conrad",
+                "John Buchan",
+                "Graham Greene"
+            ]
+        },
+        "8": {
+            "question": "How many Harry Potter books are there?",
+            "correct_answer": "7",
+            "incorrect_answers": [
+                "8",
+                "5",
+                "6"
+            ]
+        },
+        "9": {
+            "question": "Under what pseudonym did Stephen King publish five novels between 1977 and 1984?",
+            "correct_answer": "Richard Bachman",
+            "incorrect_answers": [
+                "J. D. Robb",
+                "Mark Twain",
+                "Lewis Carroll"
+            ]
+        },
+        "10": {
+            "question": "What's Harry Potter's dad's name?",
+            "correct_answer": "James Potter",
+            "incorrect_answers": [
+                "Joey Potter",
+                "Frank Potter",
+                "Hairy Potter Sr."
+            ]
+        },
+        "11": {
+            "question": "Who wrote the young adult novel \"The Fault in Our Stars\"?",
+            "correct_answer": "John Green",
+            "incorrect_answers": [
+                "Stephenie Meyer",
+                "Suzanne Collins",
+                "Stephen Chbosky"
+            ]
+        },
+        "12": {
+            "question": "Who was the author of the 1954 novel, \"Lord of the Flies\"?",
+            "correct_answer": "William Golding",
+            "incorrect_answers": [
+                "Stephen King",
+                "F. Scott Fitzgerald",
+                "Hunter Fox"
+            ]
+        },
+        "13": {
+            "question": "What is the name of the three headed dog in Harry Potter and the Sorcerer's Stone?",
+            "correct_answer": "Fluffy",
+            "incorrect_answers": [
+                "Spike",
+                "Poofy",
+                "Spot"
+            ]
+        },
+        "14": {
+            "question": "What is the name of the protagonist of J.D. Salinger's novel Catcher in the Rye?",
+            "correct_answer": "Holden Caulfield",
+            "incorrect_answers": [
+                "Fletcher Christian",
+                "Jay Gatsby",
+                "Randall Flagg"
+            ]
+        },
+        "15": {
+            "question": "What is the title of the first Sherlock Holmes book by Arthur Conan Doyle?",
+            "correct_answer": "A Study in Scarlet",
+            "incorrect_answers": [
+                "The Sign of the Four",
+                "A Case of Identity",
+                "The Doings of Raffles Haw"
+            ]
+        },
+        "16": {
+            "question": "What is the name of Sherlock Holmes's brother?",
+            "correct_answer": "Mycroft Holmes",
+            "incorrect_answers": [
+                "Mederi Holmes",
+                "Martin Holmes",
+                "Herbie Hancock Holmes"
+            ]
+        },
+        "17": {
+            "question": "What's the second book in George R. R. Martin's 'A Song of Ice and Fire' series?",
+            "correct_answer": "A Clash of Kings",
+            "incorrect_answers": [
+                "A Dance with Dragons",
+                "A Storm of Swords",
+                "A Feast for Crows"
+            ]
+        },
+        "18": {
+            "question": "What was the first ever entry written for the SCP Foundation collaborative writing project?",
+            "correct_answer": "SCP-173",
+            "incorrect_answers": [
+                "SCP-001",
+                "SCP-999",
+                "SCP-1459"
+            ]
+        },
+        "19": {
+            "question": "Which is NOT a book in the Harry Potter Series?",
+            "correct_answer": "The House Elf",
+            "incorrect_answers": [
+                "The Chamber of Secrets",
+                "The Prisoner of Azkaban",
+                "The Deathly Hallows"
+            ]
+        },
+        "20": {
+            "question": "In the novel 1984, written by George Orwell, what is the name of the totalitarian regime that controls Oceania?",
+            "correct_answer": "INGSOC",
+            "incorrect_answers": [
+                "Neo-Bolshevism",
+                "Obliteration of the Self",
+                "Earth Alliance"
+            ]
+        },
+        "21": {
+            "question": "Who wrote \"A Tale of Two Cities\"?",
+            "correct_answer": "Charles Dickens",
+            "incorrect_answers": [
+                "Charles Darwin",
+                "Mark Twain",
+                "Roald Dahl"
+            ]
+        },
+        "22": {
+            "question": "What was Sir Handel's original name in \"The Railway Series\" and it's animated counterpart \"Thomas and Friends?\"",
+            "correct_answer": "Falcon",
+            "incorrect_answers": [
+                "Eagle",
+                "Kyte",
+                "Swallow"
             ]
         }
     },
     "users": {
         "0": {
-            "name": "finn",
+            "name": "1",
             "answers": [
                 {
-                    "question": "In Greek Mythology, who killed Achilles?",
-                    "correct_answer": "Paris",
-                    "user_answer": "Paris",
+                    "question": "Who wrote \"Harry Potter\"?",
+                    "correct_answer": "J.K. Rowling",
+                    "user_answer": "J.K. Rowling",
                     "correct": true
                 },
                 {
-                    "question": "A minotaur is half human half what?",
-                    "correct_answer": "Bull",
-                    "user_answer": "Cow",
+                    "question": "George Orwell wrote this book, which is often considered a statement on government oversight.",
+                    "correct_answer": "1984",
+                    "user_answer": "1984",
+                    "correct": true
+                },
+                {
+                    "question": "Which famous book is sub-titled 'The Modern Prometheus'?",
+                    "correct_answer": "Frankenstein",
+                    "user_answer": "Frankenstein",
+                    "correct": true
+                },
+                {
+                    "question": "What was the name of Captain Nemo's submarine in \"20,000 Leagues Under the Sea\"?",
+                    "correct_answer": "The Nautilus",
+                    "user_answer": "The Poseidon  ",
                     "correct": false
                 },
                 {
-                    "question": "What is the name of the Greek god of blacksmiths?",
-                    "correct_answer": "Hephaestus",
-                    "user_answer": "Hephaestus",
+                    "question": "Which of the following is the world's best-selling book?",
+                    "correct_answer": "The Lord of the Rings",
+                    "user_answer": "Harry Potter and the Philosopher's Stone",
+                    "correct": false
+                },
+                {
+                    "question": "Who wrote the novel 'Fear And Loathing In Las Vegas'?",
+                    "correct_answer": "Hunter S. Thompson",
+                    "user_answer": "F. Scott Fitzgerald",
+                    "correct": false
+                },
+                {
+                    "question": "\"Green Eggs And Ham\" is a book by which author?",
+                    "correct_answer": "Dr. Seuss",
+                    "user_answer": "Beatrix Potter",
+                    "correct": false
+                },
+                {
+                    "question": "Which famous spy novelist wrote the childrens' story \"Chitty-Chitty-Bang-Bang\"?",
+                    "correct_answer": "Ian Fleming",
+                    "user_answer": "Joseph Conrad",
+                    "correct": false
+                },
+                {
+                    "question": "How many Harry Potter books are there?",
+                    "correct_answer": "7",
+                    "user_answer": "7",
                     "correct": true
                 },
                 {
-                    "question": "Which of the following is not one of the Greek Fates?",
-                    "correct_answer": "Narcissus",
-                    "user_answer": "Narcissus",
+                    "question": "Under what pseudonym did Stephen King publish five novels between 1977 and 1984?",
+                    "correct_answer": "Richard Bachman",
+                    "user_answer": "Mark Twain",
+                    "correct": false
+                },
+                {
+                    "question": "What's Harry Potter's dad's name?",
+                    "correct_answer": "James Potter",
+                    "user_answer": "James Potter",
                     "correct": true
                 },
                 {
-                    "question": "The Maori hold that which island nation was founded by Kupe, who discovered it under a long white cloud?",
-                    "correct_answer": "New Zealand",
-                    "user_answer": "New Zealand",
+                    "question": "Who wrote the young adult novel \"The Fault in Our Stars\"?",
+                    "correct_answer": "John Green",
+                    "user_answer": "John Green",
                     "correct": true
+                },
+                {
+                    "question": "Who was the author of the 1954 novel, \"Lord of the Flies\"?",
+                    "correct_answer": "William Golding",
+                    "user_answer": "William Golding",
+                    "correct": true
+                },
+                {
+                    "question": "What is the name of the three headed dog in Harry Potter and the Sorcerer's Stone?",
+                    "correct_answer": "Fluffy",
+                    "user_answer": "Fluffy",
+                    "correct": true
+                },
+                {
+                    "question": "What is the name of the protagonist of J.D. Salinger's novel Catcher in the Rye?",
+                    "correct_answer": "Holden Caulfield",
+                    "user_answer": "Jay Gatsby",
+                    "correct": false
+                },
+                {
+                    "question": "What is the title of the first Sherlock Holmes book by Arthur Conan Doyle?",
+                    "correct_answer": "A Study in Scarlet",
+                    "user_answer": "A Case of Identity",
+                    "correct": false
+                },
+                {
+                    "question": "What is the name of Sherlock Holmes's brother?",
+                    "correct_answer": "Mycroft Holmes",
+                    "user_answer": "Mederi Holmes",
+                    "correct": false
+                },
+                {
+                    "question": "What's the second book in George R. R. Martin's 'A Song of Ice and Fire' series?",
+                    "correct_answer": "A Clash of Kings",
+                    "user_answer": "A Dance with Dragons",
+                    "correct": false
+                },
+                {
+                    "question": "What was the first ever entry written for the SCP Foundation collaborative writing project?",
+                    "correct_answer": "SCP-173",
+                    "user_answer": "SCP-173",
+                    "correct": true
+                },
+                {
+                    "question": "Which is NOT a book in the Harry Potter Series?",
+                    "correct_answer": "The House Elf",
+                    "user_answer": "The House Elf",
+                    "correct": true
+                },
+                {
+                    "question": "In the novel 1984, written by George Orwell, what is the name of the totalitarian regime that controls Oceania?",
+                    "correct_answer": "INGSOC",
+                    "user_answer": "INGSOC",
+                    "correct": true
+                },
+                {
+                    "question": "Who wrote \"A Tale of Two Cities\"?",
+                    "correct_answer": "Charles Dickens",
+                    "user_answer": "Mark Twain",
+                    "correct": false
+                },
+                {
+                    "question": "What was Sir Handel's original name in \"The Railway Series\" and it's animated counterpart \"Thomas and Friends?\"",
+                    "correct_answer": "Falcon",
+                    "user_answer": "Kyte",
+                    "correct": false
+                }
+            ]
+        },
+        "1": {
+            "name": "2",
+            "answers": [
+                {
+                    "question": "Who wrote \"Harry Potter\"?",
+                    "correct_answer": "J.K. Rowling",
+                    "user_answer": "J.R.R. Tolkien",
+                    "correct": false
+                },
+                {
+                    "question": "George Orwell wrote this book, which is often considered a statement on government oversight.",
+                    "correct_answer": "1984",
+                    "user_answer": "1984",
+                    "correct": true
+                },
+                {
+                    "question": "Which famous book is sub-titled 'The Modern Prometheus'?",
+                    "correct_answer": "Frankenstein",
+                    "user_answer": "Dracula",
+                    "correct": false
+                },
+                {
+                    "question": "What was the name of Captain Nemo's submarine in \"20,000 Leagues Under the Sea\"?",
+                    "correct_answer": "The Nautilus",
+                    "user_answer": "The Neptune",
+                    "correct": false
+                },
+                {
+                    "question": "Which of the following is the world's best-selling book?",
+                    "correct_answer": "The Lord of the Rings",
+                    "user_answer": "The Little Prince",
+                    "correct": false
+                },
+                {
+                    "question": "Who wrote the novel 'Fear And Loathing In Las Vegas'?",
+                    "correct_answer": "Hunter S. Thompson",
+                    "user_answer": "Hunter S. Thompson",
+                    "correct": true
+                },
+                {
+                    "question": "\"Green Eggs And Ham\" is a book by which author?",
+                    "correct_answer": "Dr. Seuss",
+                    "user_answer": "Beatrix Potter",
+                    "correct": false
+                },
+                {
+                    "question": "Which famous spy novelist wrote the childrens' story \"Chitty-Chitty-Bang-Bang\"?",
+                    "correct_answer": "Ian Fleming",
+                    "user_answer": "Ian Fleming",
+                    "correct": true
+                },
+                {
+                    "question": "How many Harry Potter books are there?",
+                    "correct_answer": "7",
+                    "user_answer": "8",
+                    "correct": false
+                },
+                {
+                    "question": "Under what pseudonym did Stephen King publish five novels between 1977 and 1984?",
+                    "correct_answer": "Richard Bachman",
+                    "user_answer": "J. D. Robb",
+                    "correct": false
+                },
+                {
+                    "question": "What's Harry Potter's dad's name?",
+                    "correct_answer": "James Potter",
+                    "user_answer": "Joey Potter",
+                    "correct": false
+                },
+                {
+                    "question": "Who wrote the young adult novel \"The Fault in Our Stars\"?",
+                    "correct_answer": "John Green",
+                    "user_answer": "Stephenie Meyer",
+                    "correct": false
+                },
+                {
+                    "question": "Who was the author of the 1954 novel, \"Lord of the Flies\"?",
+                    "correct_answer": "William Golding",
+                    "user_answer": "Stephen King",
+                    "correct": false
+                },
+                {
+                    "question": "What is the name of the three headed dog in Harry Potter and the Sorcerer's Stone?",
+                    "correct_answer": "Fluffy",
+                    "user_answer": "Spike",
+                    "correct": false
+                },
+                {
+                    "question": "What is the name of the protagonist of J.D. Salinger's novel Catcher in the Rye?",
+                    "correct_answer": "Holden Caulfield",
+                    "user_answer": "Holden Caulfield",
+                    "correct": true
+                },
+                {
+                    "question": "What is the title of the first Sherlock Holmes book by Arthur Conan Doyle?",
+                    "correct_answer": "A Study in Scarlet",
+                    "user_answer": "A Study in Scarlet",
+                    "correct": true
+                },
+                {
+                    "question": "What is the name of Sherlock Holmes's brother?",
+                    "correct_answer": "Mycroft Holmes",
+                    "user_answer": "Mederi Holmes",
+                    "correct": false
+                },
+                {
+                    "question": "What's the second book in George R. R. Martin's 'A Song of Ice and Fire' series?",
+                    "correct_answer": "A Clash of Kings",
+                    "user_answer": "A Clash of Kings",
+                    "correct": true
+                },
+                {
+                    "question": "What was the first ever entry written for the SCP Foundation collaborative writing project?",
+                    "correct_answer": "SCP-173",
+                    "user_answer": "SCP-001",
+                    "correct": false
+                },
+                {
+                    "question": "Which is NOT a book in the Harry Potter Series?",
+                    "correct_answer": "The House Elf",
+                    "user_answer": "The Chamber of Secrets",
+                    "correct": false
+                },
+                {
+                    "question": "In the novel 1984, written by George Orwell, what is the name of the totalitarian regime that controls Oceania?",
+                    "correct_answer": "INGSOC",
+                    "user_answer": "Neo-Bolshevism",
+                    "correct": false
+                },
+                {
+                    "question": "Who wrote \"A Tale of Two Cities\"?",
+                    "correct_answer": "Charles Dickens",
+                    "user_answer": "Charles Darwin",
+                    "correct": false
+                },
+                {
+                    "question": "What was Sir Handel's original name in \"The Railway Series\" and it's animated counterpart \"Thomas and Friends?\"",
+                    "correct_answer": "Falcon",
+                    "user_answer": "Eagle",
+                    "correct": false
                 }
             ]
         }
